@@ -1,0 +1,1892 @@
+fileFormatVersion: 2
+guid: c69b088ad72626d47b271188f1d76515
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2108673732495079919
+    second: chest spritesheet animations_0
+  - first:
+      213: -6668760231688914844
+    second: chest spritesheet animations_1
+  - first:
+      213: 720298104479981816
+    second: chest spritesheet animations_2
+  - first:
+      213: 501688124302184393
+    second: chest spritesheet animations_3
+  - first:
+      213: 3536186992950002467
+    second: chest spritesheet animations_4
+  - first:
+      213: 6330992797566623991
+    second: chest spritesheet animations_5
+  - first:
+      213: 3949193005326739169
+    second: chest spritesheet animations_6
+  - first:
+      213: 3769044714072540420
+    second: chest spritesheet animations_7
+  - first:
+      213: -2197552925904837606
+    second: chest spritesheet animations_8
+  - first:
+      213: 2838219645990847770
+    second: chest spritesheet animations_9
+  - first:
+      213: 6214690419263731435
+    second: chest spritesheet animations_10
+  - first:
+      213: -1206380312070045458
+    second: chest spritesheet animations_11
+  - first:
+      213: -3485713140941027638
+    second: chest spritesheet animations_12
+  - first:
+      213: 7447347235978578710
+    second: chest spritesheet animations_13
+  - first:
+      213: -8812375766968475880
+    second: chest spritesheet animations_14
+  - first:
+      213: -8519949232265367165
+    second: chest spritesheet animations_15
+  - first:
+      213: 5925703643539845979
+    second: chest spritesheet animations_16
+  - first:
+      213: 3551482106342432436
+    second: chest spritesheet animations_17
+  - first:
+      213: 5453330675885633554
+    second: chest spritesheet animations_18
+  - first:
+      213: 3724121491831486920
+    second: chest spritesheet animations_19
+  - first:
+      213: -5444649706649712511
+    second: chest spritesheet animations_20
+  - first:
+      213: 2877281218208779895
+    second: chest spritesheet animations_21
+  - first:
+      213: 4602544099726245447
+    second: chest spritesheet animations_22
+  - first:
+      213: 7879058641224328500
+    second: chest spritesheet animations_23
+  - first:
+      213: -490018730675987857
+    second: chest spritesheet animations_24
+  - first:
+      213: -8544635497315169226
+    second: chest spritesheet animations_25
+  - first:
+      213: -4718265461365874666
+    second: chest spritesheet animations_26
+  - first:
+      213: 344701299557344298
+    second: chest spritesheet animations_27
+  - first:
+      213: 8618848062889270212
+    second: chest spritesheet animations_28
+  - first:
+      213: 5847471617159600163
+    second: chest spritesheet animations_29
+  - first:
+      213: 7487440168084120346
+    second: chest spritesheet animations_30
+  - first:
+      213: -7845229189930861466
+    second: chest spritesheet animations_31
+  - first:
+      213: 3063645622699849849
+    second: chest spritesheet animations_32
+  - first:
+      213: -8381121283543870932
+    second: chest spritesheet animations_33
+  - first:
+      213: 3235794405993683999
+    second: chest spritesheet animations_34
+  - first:
+      213: -6898002082967522327
+    second: chest spritesheet animations_35
+  - first:
+      213: 9115054162861906121
+    second: chest spritesheet animations_36
+  - first:
+      213: 3091929781093669066
+    second: chest spritesheet animations_37
+  - first:
+      213: -1095276584147608135
+    second: chest spritesheet animations_38
+  - first:
+      213: 8971010275875167493
+    second: chest spritesheet animations_39
+  - first:
+      213: 1306451151905953248
+    second: chest spritesheet animations_40
+  - first:
+      213: 2148822266557193462
+    second: chest spritesheet animations_41
+  - first:
+      213: -1696996256056057260
+    second: chest spritesheet animations_42
+  - first:
+      213: -8188648839541566937
+    second: chest spritesheet animations_43
+  - first:
+      213: -108632374249115064
+    second: chest spritesheet animations_44
+  - first:
+      213: -287358424220209008
+    second: chest spritesheet animations_45
+  - first:
+      213: 8893226335459476443
+    second: chest spritesheet animations_46
+  - first:
+      213: 7395338295295054975
+    second: chest spritesheet animations_47
+  - first:
+      213: 6811397404114639020
+    second: chest spritesheet animations_48
+  - first:
+      213: -5529792520050608788
+    second: chest spritesheet animations_49
+  - first:
+      213: -5766874355892893999
+    second: chest spritesheet animations_50
+  - first:
+      213: -3656370663831408408
+    second: chest spritesheet animations_51
+  - first:
+      213: -2216273372284454496
+    second: chest spritesheet animations_52
+  - first:
+      213: 1844577440394949852
+    second: chest spritesheet animations_53
+  - first:
+      213: -3809062362786276171
+    second: chest spritesheet animations_54
+  - first:
+      213: -7081847792571086134
+    second: chest spritesheet animations_55
+  - first:
+      213: -7683600596858311135
+    second: chest spritesheet animations_56
+  - first:
+      213: 7423721077172343265
+    second: chest spritesheet animations_57
+  - first:
+      213: 3532113177104105244
+    second: chest spritesheet animations_58
+  - first:
+      213: 6142332557489454477
+    second: chest spritesheet animations_59
+  - first:
+      213: -5786457994255028073
+    second: chest spritesheet animations_60
+  - first:
+      213: -5956036137295494780
+    second: chest spritesheet animations_61
+  - first:
+      213: -8030982576432489245
+    second: chest spritesheet animations_62
+  - first:
+      213: -2915123993022231748
+    second: chest spritesheet animations_63
+  - first:
+      213: -7730249066439812441
+    second: chest spritesheet animations_64
+  - first:
+      213: 4113575449054959410
+    second: chest spritesheet animations_65
+  - first:
+      213: -6895788280416405212
+    second: chest spritesheet animations_66
+  - first:
+      213: 5385146419834787374
+    second: chest spritesheet animations_67
+  - first:
+      213: 8675014909657795273
+    second: chest spritesheet animations_68
+  - first:
+      213: -1640554967388365452
+    second: chest spritesheet animations_69
+  - first:
+      213: -5094059263125689065
+    second: chest spritesheet animations_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: chest spritesheet animations_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 239
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1160f6b996c7cb2e0800000000000000
+      internalID: -2108673732495079919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 239
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4683ee1e6edc373a0800000000000000
+      internalID: -6668760231688914844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 239
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0aae94f430ff900800000000000000
+      internalID: 720298104479981816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 239
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf4015e0ba56f600800000000000000
+      internalID: 501688124302184393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 239
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3234426a55f031130800000000000000
+      internalID: 3536186992950002467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 239
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0e38608643cd750800000000000000
+      internalID: 6330992797566623991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 239
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e625f75d1a5ec630800000000000000
+      internalID: 3949193005326739169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_7
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 239
+        width: 42
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4058bdcb2365e4430800000000000000
+      internalID: 3769044714072540420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_8
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 239
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14625cc149b081e0800000000000000
+      internalID: -2197552925904837606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_9
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 239
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a15c1d10bb1636720800000000000000
+      internalID: 2838219645990847770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_10
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 191
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be6fc3d62040f3650800000000000000
+      internalID: 6214690419263731435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_11
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 215
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee04a037f73124fe0800000000000000
+      internalID: -1206380312070045458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_12
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 191
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac68c4dcd5240afc0800000000000000
+      internalID: -3485713140941027638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 215
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b8d777ada4a5760800000000000000
+      internalID: 7447347235978578710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 191
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f559e0ee624b580800000000000000
+      internalID: -8812375766968475880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 215
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381f57a505f03c980800000000000000
+      internalID: -8519949232265367165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_16
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 191
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b533e6d61145c3250800000000000000
+      internalID: 5925703643539845979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_17
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 215
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4be52beb826694130800000000000000
+      internalID: 3551482106342432436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_18
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 191
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21077e25b5f1eab40800000000000000
+      internalID: 5453330675885633554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_19
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 215
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c9730df3ccbea330800000000000000
+      internalID: 3724121491831486920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_20
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 191
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18885b450f7b074b0800000000000000
+      internalID: -5444649706649712511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_21
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 215
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77ecc3206082ee720800000000000000
+      internalID: 2877281218208779895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 143
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74eb04f29758fdf30800000000000000
+      internalID: 4602544099726245447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_23
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 167
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435e5a2d61a085d60800000000000000
+      internalID: 7879058641224328500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_24
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 143
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a15c88f8a1339f0800000000000000
+      internalID: -490018730675987857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_25
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 167
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c065f594b5b6980800000000000000
+      internalID: -8544635497315169226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_26
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 143
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610ea43bf8a558eb0800000000000000
+      internalID: -4718265461365874666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_27
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 167
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a242bb17100a8c400800000000000000
+      internalID: 344701299557344298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_28
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 143
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb149906ac4c9770800000000000000
+      internalID: 8618848062889270212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_29
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 167
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3281afe5474662150800000000000000
+      internalID: 5847471617159600163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_30
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 143
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1325a7a92bb8e760800000000000000
+      internalID: 7487440168084120346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_31
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 167
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c35a81e95202390800000000000000
+      internalID: -7845229189930861466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_32
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 143
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97874b24671448a20800000000000000
+      internalID: 3063645622699849849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_33
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 167
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22d6e2099640bb80800000000000000
+      internalID: -8381121283543870932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_34
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 95
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c13774ed9d7ec20800000000000000
+      internalID: 3235794405993683999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_35
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3f0d817af5540a0800000000000000
+      internalID: -6898002082967522327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_36
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 95
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c854dda77d2f7e70800000000000000
+      internalID: 9115054162861906121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_37
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 119
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac81a8011cdb8ea20800000000000000
+      internalID: 3091929781093669066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_38
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 95
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bd141fefbbccc0f0800000000000000
+      internalID: -1095276584147608135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_39
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 119
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d1be1c05e6f7c70800000000000000
+      internalID: 8971010275875167493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_40
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 95
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e511c99662712210800000000000000
+      internalID: 1306451151905953248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_41
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fc579b677622dd10800000000000000
+      internalID: 2148822266557193462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_42
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 95
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4526c9c65ee0378e0800000000000000
+      internalID: -1696996256056057260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_43
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722d5b804431c5e80800000000000000
+      internalID: -8188648839541566937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_44
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 95
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84236c16e6f0e7ef0800000000000000
+      internalID: -108632374249115064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_45
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 119
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09073212909130cf0800000000000000
+      internalID: -287358424220209008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_46
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 47
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd30638db361b6b70800000000000000
+      internalID: 8893226335459476443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_47
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 71
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7497e45ff481a660800000000000000
+      internalID: 7395338295295054975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_48
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 47
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca85548c9d1f68e50800000000000000
+      internalID: 6811397404114639020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_49
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 71
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6575c8400b3243b0800000000000000
+      internalID: -5529792520050608788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_50
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 47
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d6c1b8d352f7ffa0800000000000000
+      internalID: -5766874355892893999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_51
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 71
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e07b27e046f14dc0800000000000000
+      internalID: -3656370663831408408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_52
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 47
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a9f3d73c173e31e0800000000000000
+      internalID: -2216273372284454496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_53
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 71
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd4b077b861499910800000000000000
+      internalID: 1844577440394949852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_54
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 47
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc50da56fd732bc0800000000000000
+      internalID: -3809062362786276171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_55
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 71
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aca8a6234f838bd90800000000000000
+      internalID: -7081847792571086134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_56
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 47
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ee74477fd5e5590800000000000000
+      internalID: -7683600596858311135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_57
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 71
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e11074bcfa560760800000000000000
+      internalID: 7423721077172343265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_58
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 25
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1f34cb7836940130800000000000000
+      internalID: 3532113177104105244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_59
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 38
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8db975eae2fd3550800000000000000
+      internalID: 6142332557489454477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_60
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 25
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 790b5b8bc1f52bfa0800000000000000
+      internalID: -5786457994255028073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_61
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 25
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481cc1780b8e75da0800000000000000
+      internalID: -5956036137295494780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_62
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 25
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ecd36e85e73c8090800000000000000
+      internalID: -8030982576432489245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_63
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 25
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3b01bf5c266b87d0800000000000000
+      internalID: -2915123993022231748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_64
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 23
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa5f814e63a8b490800000000000000
+      internalID: -7730249066439812441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_65
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23750b5831b561930800000000000000
+      internalID: 4113575449054959410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_66
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 0
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4297a7b281d3d40a0800000000000000
+      internalID: -6895788280416405212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_67
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2618b91322ebba40800000000000000
+      internalID: 5385146419834787374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_68
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 0
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cace5f1918d36870800000000000000
+      internalID: 8675014909657795273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_69
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d505ef2f39b39e0800000000000000
+      internalID: -1640554967388365452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: chest spritesheet animations_70
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 0
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71dea94f6144e49b0800000000000000
+      internalID: -5094059263125689065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
