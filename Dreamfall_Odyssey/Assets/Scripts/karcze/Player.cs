@@ -5,47 +5,58 @@ public class Player : MonoBehaviour
 {
     public float speed;
     public float jump;
-    public float groundedY;
+    float moveVelocity;
+    public Rigidbody2D rb;
+    bool isGrounded;
 
+    private Animator anim;
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
-
-        // Move
-        transform.Translate(Vector2.right * Input.GetAxis("Horizontal") * speed * Time.deltaTime);
-        // Jump
-        if (Input.GetButtonDown("Jump") && IsGrounded())
+        //Grounded?
+        if (isGrounded == true)
         {
+            //jumping
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.W))
+            {
 
-            GetComponent<Rigidbody2D>().AddForce(Vector2.up * jump, ForceMode2D.Impulse);
+                GetComponent<Rigidbody2D>().linearVelocity = new Vector2(GetComponent<Rigidbody2D>().linearVelocity.x, jump);
+            }
 
         }
 
-    }
+        moveVelocity = 0;
 
-    public bool IsGrounded()
-    {
-
-        RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(0, groundedY), Vector2.down, .1f);
-
-        if (hit.collider != null)
+        //Left Right Movement
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
         {
-
-            return true;
-
+            moveVelocity = -speed;
         }
 
-        return false;
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+        {
+            moveVelocity = speed;
+        }
+
+        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().linearVelocity.y);
+
+        anim.SetBool("isRunning", moveVelocity != 0);
 
     }
-
-    private void OnDrawGizmos()
+    void OnCollisionEnter2D(Collision2D col)
     {
-
-        Gizmos.color = Color.red;
-
-        Gizmos.DrawRay(transform.position + new Vector3(0, groundedY), Vector2.down * .1f);
-
+        Debug.Log("OnCollisionEnter2D");
+        isGrounded = true;
+    }
+    void OnCollisionExit2D(Collision2D col)
+    {
+        Debug.Log("OnCollisionExit2D");
+        isGrounded = false;
     }
 
 }
