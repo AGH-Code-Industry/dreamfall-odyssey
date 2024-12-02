@@ -33,6 +33,14 @@ namespace mattrz
         public void OnMove(InputAction.CallbackContext ctx)
         {
             _horizontalVelocity = ctx.ReadValue<float>() * speed;
+            if (Mathf.Abs(_horizontalVelocity) < 0.01f)
+            {
+                _rigidbody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+            }
+            else
+            {
+                _rigidbody.constraints = RigidbodyConstraints2D.FreezeRotation;
+            }
             
             if (!animator) return;
             if (_horizontalVelocity > 0)
