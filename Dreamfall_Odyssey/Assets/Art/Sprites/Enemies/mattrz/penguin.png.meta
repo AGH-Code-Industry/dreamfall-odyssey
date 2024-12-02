@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 88aed9c9bdfa35d459e4d12cd1b7814a
+guid: 688ea778bf917c843a00c4b4676b7688
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5985453723790814308
-    second: Player_Run_Spr_0
+      213: -6394888585581640024
+    second: penguin_0
   - first:
-      213: -4801156279315709214
-    second: Player_Run_Spr_1
+      213: 2400207654850816759
+    second: penguin_1
   - first:
-      213: 935778275764922657
-    second: Player_Run_Spr_2
+      213: -7761143411921036472
+    second: penguin_2
   - first:
-      213: -3115799689530921317
-    second: Player_Run_Spr_3
+      213: -973357667964297266
+    second: penguin_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Player_Run_Spr_0
+      name: penguin_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 15
-        width: 25
-        height: 34
+        x: 4
+        y: 0
+        width: 20
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 46c2712137a901350800000000000000
-      internalID: 5985453723790814308
+      spriteID: 8a6c43686bac047a0800000000000000
+      internalID: -6394888585581640024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Run_Spr_1
+      name: penguin_1
       rect:
         serializedVersion: 2
-        x: 83
-        y: 17
-        width: 26
-        height: 33
+        x: 38
+        y: 0
+        width: 19
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +159,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2e240443dcdde5db0800000000000000
-      internalID: -4801156279315709214
+      spriteID: 7fa6e8e25204f4120800000000000000
+      internalID: 2400207654850816759
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Run_Spr_2
+      name: penguin_2
       rect:
         serializedVersion: 2
-        x: 147
-        y: 15
-        width: 25
-        height: 34
+        x: 71
+        y: 0
+        width: 20
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 129ee73426d8cfc00800000000000000
-      internalID: 935778275764922657
+      spriteID: 84b5599ef21ea4490800000000000000
+      internalID: -7761143411921036472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Player_Run_Spr_3
+      name: penguin_3
       rect:
         serializedVersion: 2
-        x: 213
-        y: 17
-        width: 25
-        height: 33
+        x: 102
+        y: 0
+        width: 19
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +203,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b9eac3ac0b472c4d0800000000000000
-      internalID: -3115799689530921317
+      spriteID: ecfd599ab50fd72f0800000000000000
+      internalID: -973357667964297266
       vertices: []
       indices: 
       edges: []
@@ -223,10 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Player_Run_Spr_0: 5985453723790814308
-      Player_Run_Spr_1: -4801156279315709214
-      Player_Run_Spr_2: 935778275764922657
-      Player_Run_Spr_3: -3115799689530921317
+      penguin_0: -6394888585581640024
+      penguin_1: 2400207654850816759
+      penguin_2: -7761143411921036472
+      penguin_3: -973357667964297266
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

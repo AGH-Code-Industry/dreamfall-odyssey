@@ -5,14 +5,14 @@ public class Enemy : MonoBehaviour {
     public Transform pointB; 
     public float speed = 2f; 
 
-    private Vector3 target; 
+    protected Vector3 target; 
 
     void Start()
     {
         target = pointA.position;
     }
 
-    void Update()
+    protected void Update()
     {
         transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
 
