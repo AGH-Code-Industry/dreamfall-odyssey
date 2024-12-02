@@ -7,6 +7,7 @@ namespace mattrz
     {
 
         [SerializeField] private float speed = 8f;
+        [SerializeField] private float jumpForce = 15f;
         [SerializeField] private Animator animator;
         [SerializeField] private LayerMask groundLayer;
         [SerializeField] private float groundCheckDistance = 1.2f;
@@ -25,46 +26,31 @@ namespace mattrz
         private void Update()
         {
             _rigidbody.linearVelocity = new Vector2(_horizontalVelocity, _rigidbody.linearVelocity.y);
-            
-            if(IsGrounded())
-            {
-                animator.SetBool(IsInAir, false);
-            }
-            else
-            {
-                animator.SetBool(IsInAir, true);
-            }
+
+            animator.SetBool(IsInAir, !IsGrounded());
         }
 
         public void OnMove(InputAction.CallbackContext ctx)
         {
             _horizontalVelocity = ctx.ReadValue<float>() * speed;
-            if (animator)
+            
+            if (!animator) return;
+            if (_horizontalVelocity > 0)
             {
-                if (_horizontalVelocity > 0)
-                {
-                    transform.localScale = new Vector3(1, 1, 1);
-                } else if (_horizontalVelocity < 0)
-                {
-                    transform.localScale = new Vector3(-1, 1, 1);
-                }
-                
-                if (Mathf.Abs(_horizontalVelocity) > 0.01f)
-                {
-                    animator.SetBool(IsRunning, true);
-                }
-                else
-                {
-                    animator.SetBool(IsRunning, false);
-                }
+                transform.localScale = new Vector3(1, 1, 1);
+            } else if (_horizontalVelocity < 0)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
             }
+
+            animator.SetBool(IsRunning, Mathf.Abs(_horizontalVelocity) > 0.01f);
         }
         
         public void OnJump(InputAction.CallbackContext ctx)
         {
             if (ctx.performed && IsGrounded())
             {
-                _rigidbody.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+                _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
         }
         
