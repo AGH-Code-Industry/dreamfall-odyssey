@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 76d1387f14daa2c459571b10f305a033
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -369220025493486244
+    second: Chr_Rogue_0
+  - first:
+      213: 21015912257013422
+    second: Chr_Rogue_1
+  - first:
+      213: -6504303136437487930
+    second: Chr_Rogue_2
+  - first:
+      213: 7372726347063613839
+    second: Chr_Rogue_3
+  - first:
+      213: -8645237596989914916
+    second: Chr_Rogue_4
+  - first:
+      213: 8486747546348097231
+    second: Chr_Rogue_5
+  - first:
+      213: 3961713905695503756
+    second: Chr_Rogue_6
+  - first:
+      213: 4837572342721778256
+    second: Chr_Rogue_7
+  - first:
+      213: -3462830555868328508
+    second: Chr_Rogue_8
+  - first:
+      213: 4440357545092977650
+    second: Chr_Rogue_9
+  - first:
+      213: -8813668438011642680
+    second: Chr_Rogue_10
+  - first:
+      213: 8915616204040623
+    second: Chr_Rogue_11
+  - first:
+      213: -7995763326692831330
+    second: Chr_Rogue_12
+  - first:
+      213: 8178907027377124693
+    second: Chr_Rogue_13
+  - first:
+      213: -7205152242357938100
+    second: Chr_Rogue_14
+  - first:
+      213: 7632623663929115430
+    second: Chr_Rogue_15
+  - first:
+      213: -762695163191672318
+    second: Chr_Rogue_16
+  - first:
+      213: -8549323244883909199
+    second: Chr_Rogue_17
+  - first:
+      213: -6405568080181093838
+    second: Chr_Rogue_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chr_Rogue_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 143
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c550080d75440eaf0800000000000000
+      internalID: -369220025493486244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 119
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea6c5b06cd9aa4000800000000000000
+      internalID: 21015912257013422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_2
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 119
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c63f2932c21cb5a0800000000000000
+      internalID: -6504303136437487930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_3
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 120
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f89d3eedc8f215660800000000000000
+      internalID: 7372726347063613839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_4
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 119
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd08090c532f50880800000000000000
+      internalID: -8645237596989914916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_5
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 119
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fce0f7ebdebf6c570800000000000000
+      internalID: 8486747546348097231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_6
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 120
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85b4b2aec5daf630800000000000000
+      internalID: 3961713905695503756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_7
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 95
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0529f274a62822340800000000000000
+      internalID: 4837572342721778256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 71
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cd8910d4fd81ffc0800000000000000
+      internalID: -3462830555868328508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f31ef649a15f9d30800000000000000
+      internalID: 4440357545092977650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 47
+        width: 24
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc7e30a04f8fa580800000000000000
+      internalID: -8813668438011642680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 47
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9abc8a4bcaf1000800000000000000
+      internalID: 8915616204040623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 23
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fc0642e97590190800000000000000
+      internalID: -7995763326692831330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_13
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 23
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55572c19b90518170800000000000000
+      internalID: 8178907027377124693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_14
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 23
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4855a9c538220c90800000000000000
+      internalID: -7205152242357938100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 23
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6234cb078c68ce960800000000000000
+      internalID: 7632623663929115430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2024d0e3acc5a65f0800000000000000
+      internalID: -762695163191672318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b564b61ec3ba5980800000000000000
+      internalID: -8549323244883909199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Rogue_18
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 24
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a993ce4c9da17a0800000000000000
+      internalID: -6405568080181093838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chr_Rogue_0: -369220025493486244
+      Chr_Rogue_1: 21015912257013422
+      Chr_Rogue_10: -8813668438011642680
+      Chr_Rogue_11: 8915616204040623
+      Chr_Rogue_12: -7995763326692831330
+      Chr_Rogue_13: 8178907027377124693
+      Chr_Rogue_14: -7205152242357938100
+      Chr_Rogue_15: 7632623663929115430
+      Chr_Rogue_16: -762695163191672318
+      Chr_Rogue_17: -8549323244883909199
+      Chr_Rogue_18: -6405568080181093838
+      Chr_Rogue_2: -6504303136437487930
+      Chr_Rogue_3: 7372726347063613839
+      Chr_Rogue_4: -8645237596989914916
+      Chr_Rogue_5: 8486747546348097231
+      Chr_Rogue_6: 3961713905695503756
+      Chr_Rogue_7: 4837572342721778256
+      Chr_Rogue_8: -3462830555868328508
+      Chr_Rogue_9: 4440357545092977650
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

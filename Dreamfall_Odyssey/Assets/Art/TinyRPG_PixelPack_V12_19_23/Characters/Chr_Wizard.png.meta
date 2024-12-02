@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 3fec5d76755f3514886f448d51a6aa29
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1733765077380736728
+    second: Chr_Wizard_0
+  - first:
+      213: 7877730196407051399
+    second: Chr_Wizard_1
+  - first:
+      213: -7497130045029391354
+    second: Chr_Wizard_2
+  - first:
+      213: -8181428987046945571
+    second: Chr_Wizard_3
+  - first:
+      213: -721381880053001141
+    second: Chr_Wizard_4
+  - first:
+      213: -27775585592144589
+    second: Chr_Wizard_5
+  - first:
+      213: 1173242218510101246
+    second: Chr_Wizard_6
+  - first:
+      213: 4952746396445467373
+    second: Chr_Wizard_7
+  - first:
+      213: -277558364104501535
+    second: Chr_Wizard_8
+  - first:
+      213: 1537679915620785510
+    second: Chr_Wizard_9
+  - first:
+      213: -3387571163729818898
+    second: Chr_Wizard_10
+  - first:
+      213: 2616236270838342300
+    second: Chr_Wizard_11
+  - first:
+      213: -1394973490340899073
+    second: Chr_Wizard_12
+  - first:
+      213: -990504689996339480
+    second: Chr_Wizard_13
+  - first:
+      213: 8427877243798286456
+    second: Chr_Wizard_14
+  - first:
+      213: 6463715833874131484
+    second: Chr_Wizard_15
+  - first:
+      213: 2067273489948279673
+    second: Chr_Wizard_16
+  - first:
+      213: 1722544394912383239
+    second: Chr_Wizard_17
+  - first:
+      213: 5153987028995996233
+    second: Chr_Wizard_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chr_Wizard_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 143
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8295eb619dd60f7e0800000000000000
+      internalID: -1733765077380736728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 119
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784e53920e1535d60800000000000000
+      internalID: 7877730196407051399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_2
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 119
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6046d1f02f7d4f790800000000000000
+      internalID: -7497130045029391354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_3
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 119
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddc9bffeea9b57e80800000000000000
+      internalID: -8181428987046945571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_4
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 119
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b44990c80032df5f0800000000000000
+      internalID: -721381880053001141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_5
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 119
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d0a5780425d9ff0800000000000000
+      internalID: -27775585592144589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_6
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 119
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa29c5e491384010800000000000000
+      internalID: 1173242218510101246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 95
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de26ab65b90bbb440800000000000000
+      internalID: 4952746396445467373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 71
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e6dc1f632ae52cf0800000000000000
+      internalID: -277558364104501535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_9
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 47
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66d54dc7cbfe65510800000000000000
+      internalID: 1537679915620785510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_10
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 47
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea078689fdecf0d0800000000000000
+      internalID: -3387571163729818898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_11
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 47
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c92efc3e60dbe4420800000000000000
+      internalID: 2616236270838342300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 23
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff6d42d500f04ace0800000000000000
+      internalID: -1394973490340899073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_13
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 23
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6e86c7b350142f0800000000000000
+      internalID: -990504689996339480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_14
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 23
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870f13f43b5d5f470800000000000000
+      internalID: 8427877243798286456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_15
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 23
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1aa22ffd4bb3b950800000000000000
+      internalID: 6463715833874131484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_16
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97303f5494e60bc10800000000000000
+      internalID: 2067273489948279673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_17
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 701c7903005b7e710800000000000000
+      internalID: 1722544394912383239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Wizard_18
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94af64855e3a68740800000000000000
+      internalID: 5153987028995996233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chr_Wizard_0: -1733765077380736728
+      Chr_Wizard_1: 7877730196407051399
+      Chr_Wizard_10: -3387571163729818898
+      Chr_Wizard_11: 2616236270838342300
+      Chr_Wizard_12: -1394973490340899073
+      Chr_Wizard_13: -990504689996339480
+      Chr_Wizard_14: 8427877243798286456
+      Chr_Wizard_15: 6463715833874131484
+      Chr_Wizard_16: 2067273489948279673
+      Chr_Wizard_17: 1722544394912383239
+      Chr_Wizard_18: 5153987028995996233
+      Chr_Wizard_2: -7497130045029391354
+      Chr_Wizard_3: -8181428987046945571
+      Chr_Wizard_4: -721381880053001141
+      Chr_Wizard_5: -27775585592144589
+      Chr_Wizard_6: 1173242218510101246
+      Chr_Wizard_7: 4952746396445467373
+      Chr_Wizard_8: -277558364104501535
+      Chr_Wizard_9: 1537679915620785510
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

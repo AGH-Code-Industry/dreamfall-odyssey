@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: 0ccf61ebe2449a94abbe784cdb6a3093
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4442796047671284461
+    second: Chr_Skeleton_0
+  - first:
+      213: 4222672561796480601
+    second: Chr_Skeleton_1
+  - first:
+      213: -2395827066389403019
+    second: Chr_Skeleton_2
+  - first:
+      213: -3498441268162987474
+    second: Chr_Skeleton_3
+  - first:
+      213: -4054244056408023243
+    second: Chr_Skeleton_4
+  - first:
+      213: -6551647727617668466
+    second: Chr_Skeleton_5
+  - first:
+      213: -3038427421870254707
+    second: Chr_Skeleton_6
+  - first:
+      213: 3135916436402725829
+    second: Chr_Skeleton_7
+  - first:
+      213: -7033060735292877322
+    second: Chr_Skeleton_8
+  - first:
+      213: -5672098677267467411
+    second: Chr_Skeleton_9
+  - first:
+      213: -3071507726348354605
+    second: Chr_Skeleton_10
+  - first:
+      213: 2779734353611314819
+    second: Chr_Skeleton_11
+  - first:
+      213: 4760716705094898659
+    second: Chr_Skeleton_12
+  - first:
+      213: -217082745844272337
+    second: Chr_Skeleton_13
+  - first:
+      213: 3820187938141382485
+    second: Chr_Skeleton_14
+  - first:
+      213: 3662482559856044310
+    second: Chr_Skeleton_15
+  - first:
+      213: 4389164411744342207
+    second: Chr_Skeleton_16
+  - first:
+      213: 5053307143375916434
+    second: Chr_Skeleton_17
+  - first:
+      213: -476607105148494578
+    second: Chr_Skeleton_18
+  - first:
+      213: -8823786746877065302
+    second: Chr_Skeleton_19
+  - first:
+      213: -2738595280121741043
+    second: Chr_Skeleton_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Chr_Skeleton_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 79
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2d4f6677bf7ad30800000000000000
+      internalID: 4442796047671284461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_1
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 63
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95efaa08252f99a30800000000000000
+      internalID: 4222672561796480601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 63
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57ae79c0aff40ced0800000000000000
+      internalID: -2395827066389403019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2af39fb33a037fc0800000000000000
+      internalID: -3498441268162987474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_4
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 63
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53f9f01d28e6cb7c0800000000000000
+      internalID: -4054244056408023243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_5
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 63
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a8ad59a1fd315a0800000000000000
+      internalID: -6551647727617668466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 63
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d851e9bab5655d5d0800000000000000
+      internalID: -3038427421870254707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 63
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c3e7155263058b20800000000000000
+      internalID: 3135916436402725829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5de15268c856e90800000000000000
+      internalID: -7033060735292877322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_9
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 31
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63728a1e48a841b0800000000000000
+      internalID: -5672098677267467411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_10
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 31
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db73261fffcf55d0800000000000000
+      internalID: -3071507726348354605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386d3fcbaa9939620800000000000000
+      internalID: 2779734353611314819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e31373be96711240800000000000000
+      internalID: 4760716705094898659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 8
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f23f51f8464ccfcf0800000000000000
+      internalID: -217082745844272337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_14
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 15
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557262480b8040530800000000000000
+      internalID: 3820187938141382485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_15
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6196848cb70c3d230800000000000000
+      internalID: 3662482559856044310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_16
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 8
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb0dec617c179ec30800000000000000
+      internalID: 4389164411744342207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_17
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 12
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d8dd5c214f02640800000000000000
+      internalID: 5053307143375916434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_18
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d5230fc50c269f0800000000000000
+      internalID: -476607105148494578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_19
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 6
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa7c79244bc9b8580800000000000000
+      internalID: -8823786746877065302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chr_Skeleton_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0148c83a1e8ef9d0800000000000000
+      internalID: -2738595280121741043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Chr_Skeleton_0: 4442796047671284461
+      Chr_Skeleton_1: 4222672561796480601
+      Chr_Skeleton_10: -3071507726348354605
+      Chr_Skeleton_11: 2779734353611314819
+      Chr_Skeleton_12: 4760716705094898659
+      Chr_Skeleton_13: -217082745844272337
+      Chr_Skeleton_14: 3820187938141382485
+      Chr_Skeleton_15: 3662482559856044310
+      Chr_Skeleton_16: 4389164411744342207
+      Chr_Skeleton_17: 5053307143375916434
+      Chr_Skeleton_18: -476607105148494578
+      Chr_Skeleton_19: -8823786746877065302
+      Chr_Skeleton_2: -2395827066389403019
+      Chr_Skeleton_20: -2738595280121741043
+      Chr_Skeleton_3: -3498441268162987474
+      Chr_Skeleton_4: -4054244056408023243
+      Chr_Skeleton_5: -6551647727617668466
+      Chr_Skeleton_6: -3038427421870254707
+      Chr_Skeleton_7: 3135916436402725829
+      Chr_Skeleton_8: -7033060735292877322
+      Chr_Skeleton_9: -5672098677267467411
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
