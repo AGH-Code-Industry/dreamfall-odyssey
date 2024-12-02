@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Prp_BoneProjectile_0: -4388049981487222520
+      Prp_BoneProjectile_1: 7996348069389488190
+      Prp_BoneProjectile_2: -8856739876581934005
+      Prp_BoneProjectile_3: 1202773529974075537
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

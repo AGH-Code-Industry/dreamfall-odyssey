@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      chest with background demogif_0: 4185242278415541659
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

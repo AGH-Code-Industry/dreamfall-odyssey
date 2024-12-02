@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      UI_Portrait_Rogue_0: -5863995830943733100
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

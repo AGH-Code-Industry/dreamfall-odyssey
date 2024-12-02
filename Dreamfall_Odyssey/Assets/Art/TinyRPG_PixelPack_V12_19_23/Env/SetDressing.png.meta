@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      SetDressing_0: 1393678169187901576
+      SetDressing_1: 8288753420179657464
+      SetDressing_2: -9146500554745737466
+      SetDressing_3: 5107561096507596458
+      SetDressing_4: -7291809668219667329
+      SetDressing_5: 5569881314903892965
+      SetDressing_6: 5704313844735663300
+      SetDressing_7: 8509571328695677224
+      SetDressing_8: 9068011880659412992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

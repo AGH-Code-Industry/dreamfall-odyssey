@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Prp_Coin_0: 3098448599701987668
+      Prp_Coin_1: 6240098420739824928
+      Prp_Coin_2: -7301282649494066157
+      Prp_Coin_3: 4667825947624112202
+      Prp_Coin_4: 2537042807695867609
+      Prp_Coin_5: -3967221144366671077
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

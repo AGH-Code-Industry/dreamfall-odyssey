@@ -584,7 +584,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Chr_Valkyrie_0: -960137067086701575
+      Chr_Valkyrie_1: 3743952064415697973
+      Chr_Valkyrie_10: 1014164347551176348
+      Chr_Valkyrie_11: 4910098859312773828
+      Chr_Valkyrie_12: 7740382615107338841
+      Chr_Valkyrie_13: -3585085618208965470
+      Chr_Valkyrie_14: 5893685019464478074
+      Chr_Valkyrie_15: -7045724656666983288
+      Chr_Valkyrie_16: 3792148601523223221
+      Chr_Valkyrie_17: 7865892409435772738
+      Chr_Valkyrie_18: 5808631228410342852
+      Chr_Valkyrie_2: -3332747817423137655
+      Chr_Valkyrie_3: -5489553313295140334
+      Chr_Valkyrie_4: -8238318421836806611
+      Chr_Valkyrie_5: 6145194645851112269
+      Chr_Valkyrie_6: -4859817673750397356
+      Chr_Valkyrie_7: -3326433933962538625
+      Chr_Valkyrie_8: 1181714921319917931
+      Chr_Valkyrie_9: -7032077870061954813
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
