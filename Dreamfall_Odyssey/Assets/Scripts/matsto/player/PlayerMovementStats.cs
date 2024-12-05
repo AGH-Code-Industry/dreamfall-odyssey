@@ -14,7 +14,7 @@ public class PlayerMovementStats : ScriptableObject
     public LayerMask groundLayer;
     public float groundDetectionRayLenght = 0.02f;
     public float headDetectionRayLenght = 0.02f;
-    [Range(0f, 1f)] public float HeadWidth = 0.75f;
+    
 
     [Header("Jump")]
     public float JumpHeight = 6.5f;

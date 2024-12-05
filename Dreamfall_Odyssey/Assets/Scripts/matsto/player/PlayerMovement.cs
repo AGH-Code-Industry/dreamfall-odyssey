@@ -90,11 +90,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (isFacingRight && moveInput.x < 0) 
         {
-            Turn(true);
+            Turn(false);
         }
         else if (!isFacingRight && moveInput.x > 0)
         {
-            Turn(false);
+            Turn(true);
         }
     }
     private void Turn(bool turnRight)
@@ -117,7 +117,7 @@ public class PlayerMovement : MonoBehaviour
         Vector2 boxCastSize = new Vector2(feetCollider.bounds.size.x, MoveStats.groundDetectionRayLenght);
 
         groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, MoveStats.groundDetectionRayLenght, MoveStats.groundLayer);
-        if(groundHit.collider == null)
+        if(groundHit.collider)
         {
             isGrounded = true;
         }
@@ -126,10 +126,27 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
+    
+    private void CheckIfHeadHitCeli()
+    {
+        Vector2 boxCastOrigin = new Vector2(bodyCollider.bounds.center.x, bodyCollider.bounds.max.y);
+        Vector2 boxCastSize = new Vector2(bodyCollider.bounds.size.x, MoveStats.headDetectionRayLenght);
+
+        groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.up, MoveStats.headDetectionRayLenght, MoveStats.groundLayer);
+        if(groundHit.collider)
+        {
+            bumpedHead = true;
+        }
+        else
+        {
+            bumpedHead = false;
+        }
+    }
 
     private void CollisionChecks() 
     {
         CheckIfGrounded();
+        CheckIfHeadHitCeli();
     }
 
     private void Jump()
@@ -178,14 +195,15 @@ public class PlayerMovement : MonoBehaviour
         {
             VerticalVelocity += MoveStats.Gravity * MoveStats.GravityOnReleaseMultiplier * Time.fixedDeltaTime;
         }
-        else if (VerticalVelocity < 0f)
+        else
         {
             if(!isFalling)
             {
                 isFalling = true;
             }
         }
-        if (!isFastFalling)
+        
+        if (isFastFalling)
         {
             if(fastFallTime >= MoveStats.TimeForUpwardsCancel)
             {
