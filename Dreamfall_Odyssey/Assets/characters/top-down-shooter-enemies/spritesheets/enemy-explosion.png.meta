@@ -121,7 +121,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -135,7 +135,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -159,7 +159,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -834,7 +834,36 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      enemy-explosion_0: 5023912819059519410
+      enemy-explosion_1: -8219618193473390447
+      enemy-explosion_10: -4158776477208141877
+      enemy-explosion_11: 6077058561413982177
+      enemy-explosion_12: -4588917736941650529
+      enemy-explosion_13: -5070437791503217147
+      enemy-explosion_14: 548130746106368536
+      enemy-explosion_15: -5222296531708760067
+      enemy-explosion_16: 7725802422350262432
+      enemy-explosion_17: 28391243942255821
+      enemy-explosion_18: -4798284268844109883
+      enemy-explosion_19: 2918667713479826086
+      enemy-explosion_2: -6159426776236573817
+      enemy-explosion_20: 257061606218521162
+      enemy-explosion_21: -6688681271083894705
+      enemy-explosion_22: -4780824109756934115
+      enemy-explosion_23: -7001740568853695113
+      enemy-explosion_24: 1382691570143438084
+      enemy-explosion_25: 6182604190252748502
+      enemy-explosion_26: -4750996561511647366
+      enemy-explosion_27: 4087283317550273621
+      enemy-explosion_28: 7101104431173784671
+      enemy-explosion_3: -7556598021721848230
+      enemy-explosion_4: 8839547695717447740
+      enemy-explosion_5: 5904286585298036838
+      enemy-explosion_6: 4434318185857995605
+      enemy-explosion_7: 6058824406019944829
+      enemy-explosion_8: -1664846318629469682
+      enemy-explosion_9: -5579159220241312818
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
