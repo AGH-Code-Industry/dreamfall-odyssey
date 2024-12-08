@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\kinsur\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\kinsur\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\General\Enemy.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
