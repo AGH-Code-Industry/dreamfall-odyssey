@@ -9266,7 +9266,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.012968063, y: -0.15562099}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9276,7 +9276,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.078125, y: 1.078125}
+  m_Size: {x: 1.0521889, y: 1.7006055}
   m_EdgeRadius: 0
 --- !u!212 &1858839191
 SpriteRenderer:
@@ -9442,15 +9442,15 @@ RectTransform:
   m_GameObject: {fileID: 2024505964}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 2.2141016, z: 1}
+  m_LocalScale: {x: 1, y: 0.9472469, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 860330985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 95.182, y: 229}
-  m_SizeDelta: {x: 3143.1, y: 183.15}
+  m_AnchoredPosition: {x: 95.18, y: 255.15}
+  m_SizeDelta: {x: 3171.09, y: 1143.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2024505966
 MonoBehaviour:
@@ -9481,7 +9481,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 0.45
+  m_PixelsPerUnitMultiplier: 0.35
 --- !u!222 &2024505967
 CanvasRenderer:
   m_ObjectHideFlags: 0
