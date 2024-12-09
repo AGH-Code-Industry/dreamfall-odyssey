@@ -10,7 +10,6 @@ namespace mattrz
         [SerializeField] private float jumpForce = 20f;
         [SerializeField] private Animator animator;
         [SerializeField] private LayerMask groundLayer;
-        [SerializeField] private float groundCheckRadius = 0.6f;
 
         private static readonly int IsRunning = Animator.StringToHash("IsRunning");
         private static readonly int IsInAir = Animator.StringToHash("IsInAir");
@@ -18,6 +17,8 @@ namespace mattrz
         private float _horizontalVelocity;
         private Rigidbody2D _rigidbody;
         private BoxCollider2D _collider;
+        
+        private bool _isGrounded;
 
         private void Awake()
         {
@@ -29,7 +30,7 @@ namespace mattrz
         {
             _rigidbody.linearVelocity = new Vector2(_horizontalVelocity, _rigidbody.linearVelocity.y);
 
-            animator.SetBool(IsInAir, !IsGrounded());
+            animator.SetBool(IsInAir, !_isGrounded);
         }
 
         public void OnMove(InputAction.CallbackContext ctx)
@@ -58,15 +59,28 @@ namespace mattrz
         
         public void OnJump(InputAction.CallbackContext ctx)
         {
-            if (ctx.performed && IsGrounded())
+            if (ctx.performed && _isGrounded)
             {
                 _rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
         }
         
-        private bool IsGrounded()
+        private void OnCollisionEnter2D(Collision2D other)
         {
-            return Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y - _collider.size.y/2), groundCheckRadius, groundLayer);
+            if (_collider.IsTouchingLayers(groundLayer))
+            {
+                if (other.contacts[0].normal.y > 0.5f) {
+                    _isGrounded = true;
+                }
+            }
+        }   
+        
+        private void OnCollisionExit2D(Collision2D other)
+        {
+            if (!_collider.IsTouchingLayers(groundLayer))
+            {
+                _isGrounded = false;
+            }
         }
     }
 }
