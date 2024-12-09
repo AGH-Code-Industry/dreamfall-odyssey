@@ -5,7 +5,7 @@ namespace mattrz
 {
     public class Penguin : Enemy
     {
-        void Update()
+        new void Update()
         {
             base.Update();
             

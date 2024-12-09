@@ -46,6 +46,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\mattrz\Camera.cs" />
     <Compile Include="Assets\Scripts\mattrz\Penguin.cs" />
     <Compile Include="Assets\Scripts\mattrz\Player.cs" />
     <Compile Include="Assets\Scripts\General\Enemy.cs" />
