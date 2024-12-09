@@ -7,20 +7,22 @@ namespace mattrz
     {
 
         [SerializeField] private float speed = 8f;
-        [SerializeField] private float jumpForce = 15f;
+        [SerializeField] private float jumpForce = 20f;
         [SerializeField] private Animator animator;
         [SerializeField] private LayerMask groundLayer;
-        [SerializeField] private float groundCheckDistance = 1.2f;
+        [SerializeField] private float groundCheckRadius = 0.6f;
 
         private static readonly int IsRunning = Animator.StringToHash("IsRunning");
         private static readonly int IsInAir = Animator.StringToHash("IsInAir");
     
         private float _horizontalVelocity;
         private Rigidbody2D _rigidbody;
+        private BoxCollider2D _collider;
 
         private void Awake()
         {
             _rigidbody = GetComponent<Rigidbody2D>();
+            _collider = GetComponent<BoxCollider2D>();
         }
         
         private void Update()
@@ -64,7 +66,7 @@ namespace mattrz
         
         private bool IsGrounded()
         {
-            return Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayer);
+            return Physics2D.OverlapCircle(new Vector2(transform.position.x, transform.position.y - _collider.size.y/2), groundCheckRadius, groundLayer);
         }
     }
 }
