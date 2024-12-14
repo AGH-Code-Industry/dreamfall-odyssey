@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float acceleration;
+    // public float acceleration;
     public float groundSpeed;
     public float jumpSpeed;
-    [Range(0f, 1f)]
-    public float groundDecay;
+    // [Range(0f, 1f)]
+    // public float groundDecay;
     public Rigidbody2D body;
     public BoxCollider2D groundCheck;
     public LayerMask groundMask;
     public bool grounded;
+    public Vector2 startingPosition = new Vector2(-2.0f, -0.2f);
 
     float xInput;
     float yInput;
@@ -26,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     {
         GetInput();
         HandleJump();
+        ResetPosition();
         //Vector2 direction = new Vector2(xInput, yInput).normalized;
         //body.linearVelocity = direction * speed;
     }
@@ -33,8 +35,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         CheckGround();
-        ApplyFriction();
+        // ApplyFriction();
         MoveWithInput();
+
+        // Debug.Log($"xInput: {xInput}, Velocity: {body.linearVelocity}, Velocity(x): {body.linearVelocity.x}, Velocity(y): {body.linearVelocity.y}, Grounded: {grounded}");
     }
 
     void GetInput()
@@ -47,12 +51,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Mathf.Abs(xInput) > 0)
         {
-            float increment = xInput;
-            float newSpeed = Mathf.Clamp(body.linearVelocity.x + increment, -groundSpeed, groundSpeed);
-            body.linearVelocity = new Vector2(newSpeed, body.linearVelocity.y);
-
+            // float increment = xInput;
+            // float newSpeed = Mathf.Clamp(body.linearVelocity.x + increment, -groundSpeed, groundSpeed);
+            // body.linearVelocity = new Vector2(newSpeed, body.linearVelocity.y);
+            body.linearVelocity = new Vector2(xInput * groundSpeed, body.linearVelocity.y);
+            
             float direction = Mathf.Sign(xInput);
-            transform.localScale = new Vector3(6*direction, 6, 6);
+            transform.localScale = new Vector3(8*direction, 8, 8);
         }
     }
 
@@ -69,11 +74,20 @@ public class PlayerMovement : MonoBehaviour
         grounded = Physics2D.OverlapAreaAll(groundCheck.bounds.min, groundCheck.bounds.max, groundMask).Length > 0;
     }
 
-    void ApplyFriction()
+    // DEBUG
+    void ResetPosition()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift)) 
+        {
+            Debug.Log("Set Starting Position..");
+            transform.position = startingPosition;
+        }
+    }
+    /* void ApplyFriction()
     {
         if (grounded && xInput == 0 && body.linearVelocity.y <= 0)
         {
             body.linearVelocity *= groundDecay;
         }
-    }
+    } */
 }

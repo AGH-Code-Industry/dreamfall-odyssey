@@ -1,0 +1,23 @@
+using UnityEngine;
+
+public class PlayerHealth : MonoBehaviour
+{
+    public int maxHealth = 3;
+    public int health;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        health = maxHealth;       
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if(health <= 0)
+        {
+            transform.position = Vector3.zero;
+            health = maxHealth;
+        }
+    }
+}
