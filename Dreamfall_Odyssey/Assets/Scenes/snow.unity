@@ -32058,13 +32058,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52b28a919e5cb5643adf598bb0262cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   speed: 8
   jumpForce: 20
+  invincibilityDuration: 1
+  flashInterval: 0.1
+  spriteRenderer: {fileID: 600183972}
   animator: {fileID: 600183973}
-  groundLayer:
+  enemyLayer:
     serializedVersion: 2
-    m_Bits: 128
-  groundCheckRadius: 0.6
+    m_Bits: 256
+  GroundContactFilter:
+    useTriggers: 0
+    useLayerMask: 1
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 1
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 128
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 45
+    maxNormalAngle: 135
 --- !u!114 &855328787
 MonoBehaviour:
   m_ObjectHideFlags: 0
