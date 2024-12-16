@@ -67,6 +67,7 @@
   <ItemGroup>
     <Compile Include="Assets\camera.cs" />
     <Compile Include="Assets\Scripts\paradox_scripting\player_ctrler.cs" />
+    <Compile Include="Assets\enemy_ctrl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Tileset\stringstar fields\!readme!.txt" />
