@@ -1,62 +1,93 @@
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
+
+
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public float jump;
-    float moveVelocity;
-    public Rigidbody2D rb;
-    bool isGrounded;
+    public float moveSpeed;
+    public float jumpForce;
 
+    private Rigidbody2D rb;
+    private bool isGrounded;
+    private bool isJumping;
+
+    public LayerMask groundLayer;
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.2f;
+
+    private PlayerHealth PlayerHealth;
     private Animator anim;
+
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
+        PlayerHealth = GetComponent<PlayerHealth>();
         anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        //Grounded?
-        if (isGrounded == true)
+        float moveInput = Input.GetAxis("Horizontal");
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        if (moveInput > 0)
+            transform.localScale = new Vector3(3, 3, 1);
+        else if (moveInput < 0)
+            transform.localScale = new Vector3(-3, 3, 1);
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+        // Jump
+        if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            //jumping
-            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.W))
-            {
-
-                GetComponent<Rigidbody2D>().linearVelocity = new Vector2(GetComponent<Rigidbody2D>().linearVelocity.x, jump);
-            }
-
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            isJumping = true;
+            anim.SetTrigger("Jump");
         }
 
-        moveVelocity = 0;
-
-        //Left Right Movement
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
+        if (!isGrounded && rb.linearVelocity.y < 0)
         {
-            moveVelocity = -speed;
+            anim.SetBool("isFalling", true);
+        }
+        else
+        {
+            anim.SetBool("isFalling", false);
         }
 
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
+
+        if (isGrounded && rb.linearVelocity.y <= 0)
         {
-            moveVelocity = speed;
+            anim.SetBool("isRunning", Mathf.Abs(moveInput) > 0);
         }
 
-        GetComponent<Rigidbody2D>().linearVelocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().linearVelocity.y);
+        if (isGrounded && rb.linearVelocity.y <= 0)
+        {
+            isJumping = false;
+            anim.SetBool("isJumping", false);
+        }
+        //else if (rb.linearVelocity.y < 0) // Opadanie
+        //{
+        //anim.SetBool("isJumping", true);
+        //}
 
-        anim.SetBool("isRunning", moveVelocity != 0);
-
+        anim.SetBool("isRunning", Mathf.Abs(moveInput) > 0);
     }
-    void OnCollisionEnter2D(Collision2D col)
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("OnCollisionEnter2D");
-        isGrounded = true;
-    }
-    void OnCollisionExit2D(Collision2D col)
-    {
-        Debug.Log("OnCollisionExit2D");
-        isGrounded = false;
+        if (other.CompareTag("InstantDeath"))
+        {
+            PlayerHealth.Die();
+        }
     }
 
+    void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
 }
