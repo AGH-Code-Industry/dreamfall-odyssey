@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class Player : MonoBehaviour
 
         if (IsGrounded()) canJump = true;
 
-        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocityY);
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -51,9 +52,9 @@ public class Player : MonoBehaviour
         }
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        return Physics2D.OverlapBox(groundCheck.position, new Vector2(0.53f, 0.2f), 0, groundLayer);
     }
 
     private void Flip()
@@ -67,5 +68,11 @@ public class Player : MonoBehaviour
     public void Move(InputAction.CallbackContext context)
     {
         horizontal = context.ReadValue<Vector2>().x;
+    }
+
+    public void Die()
+    {
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 }
