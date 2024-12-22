@@ -6,11 +6,14 @@ public class PlayerHealth : MonoBehaviour
     private int currentHealth;
     public Vector2 initialPosition;
 
+    Animator animator;
+
     private bool canTakeDamage = true;
 
     private void Start()
     {
         currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
@@ -29,6 +32,12 @@ public class PlayerHealth : MonoBehaviour
     public void Die()
     {
         Debug.Log("Gracz zgin¹³!");
+        canTakeDamage = false;
+        animator.SetTrigger("Die");
+    }
+
+    public void ResetPlayer()
+    {
         transform.position = initialPosition;
         currentHealth = maxHealth;
         canTakeDamage = false;

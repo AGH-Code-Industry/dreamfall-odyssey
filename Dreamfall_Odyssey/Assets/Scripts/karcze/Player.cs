@@ -6,10 +6,17 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpForce;
+    public float damage;
 
     private Rigidbody2D rb;
     private bool isGrounded;
     private bool isJumping;
+    private bool isAttacking;
+
+    //attack
+    public GameObject attackPoint;
+    public float radius;
+    public LayerMask enemies;
 
     public LayerMask groundLayer;
     public Transform groundCheck;
@@ -42,8 +49,8 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            isJumping = true;
-            anim.SetTrigger("Jump");
+            //isJumping = true;
+            anim.SetBool("isJumping", true);
         }
 
         if (!isGrounded && rb.linearVelocity.y < 0)
@@ -71,7 +78,33 @@ public class Player : MonoBehaviour
         //anim.SetBool("isJumping", true);
         //}
 
+        if (Input.GetMouseButton(0))
+        {
+            anim.SetBool("isAttacking", true);
+        }
+
         anim.SetBool("isRunning", Mathf.Abs(moveInput) > 0);
+    }
+
+    public void EndAttack()
+    {
+        anim.SetBool("isAttacking", false);
+    }
+
+    public void EndJump()
+    {
+        anim.SetBool("isJumping", false);
+    }
+    
+    public void attack()
+    {
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+
+        foreach(Collider2D enemyGameobject in enemy)
+        {
+            Debug.Log("Hit enemy");
+            enemyGameobject.GetComponent<SkeletonsHealth>().skeletonHealth -= damage;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -80,6 +113,11 @@ public class Player : MonoBehaviour
         {
             PlayerHealth.Die();
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
     }
 
     void OnDrawGizmosSelected()
