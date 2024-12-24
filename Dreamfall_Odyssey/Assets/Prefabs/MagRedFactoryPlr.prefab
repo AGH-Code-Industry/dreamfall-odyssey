@@ -57,6 +57,8 @@ MonoBehaviour:
   speed: 8
   jumpingPower: 16
   canJump: 0
+  extra_vel_loss: 0.1
+  conveyor_vel: {x: 0, y: 0}
 --- !u!61 &8557428531182340881
 BoxCollider2D:
   m_ObjectHideFlags: 0

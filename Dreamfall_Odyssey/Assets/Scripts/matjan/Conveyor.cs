@@ -27,7 +27,7 @@ public class Conveyor : MonoBehaviour
     {
         if (colliding_with_player && plr != null && plr.IsGrounded())
         {
-            plr.transform.position = new Vector2(plr.transform.position.x + move_force * Time.deltaTime, plr.transform.position.y);
+            plr.extra_vel = new Vector2(move_force, 0f);
         }
     }
 }

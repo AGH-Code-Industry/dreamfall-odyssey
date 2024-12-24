@@ -1,6 +1,9 @@
 
+using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.LightTransport;
 using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
@@ -16,6 +19,9 @@ public class Player : MonoBehaviour
     private float horizontal;
     private bool isFacingRight = true;
     public bool canJump = false;
+
+    public float extra_vel_loss = 0.1f;
+    public Vector2 extra_vel = Vector2.zero;
 
     void Update()
     {
@@ -35,6 +41,14 @@ public class Player : MonoBehaviour
         if (IsGrounded()) canJump = true;
 
         rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocityY);
+
+        rb.linearVelocity += extra_vel;
+        extra_vel = Vector2.MoveTowards(extra_vel, Vector2.zero, extra_vel_loss);
+        if (Mathf.Sign(horizontal) != Mathf.Sign(extra_vel.x))
+        {
+            extra_vel.x = 0f;
+        }
+
     }
 
     public void Jump(InputAction.CallbackContext context)
