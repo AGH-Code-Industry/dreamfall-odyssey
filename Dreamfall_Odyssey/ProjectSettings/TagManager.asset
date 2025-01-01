@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Water
   - InstantDeath
+  - Crystal
   layers:
   - Default
   - TransparentFX

@@ -6,7 +6,10 @@ public class Player : MonoBehaviour
 {
     public float moveSpeed;
     public float jumpForce;
-    public float damage;
+    public int damage = 10;
+
+    public int maxJumps = 1;
+    private int jumpCount;
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -16,7 +19,7 @@ public class Player : MonoBehaviour
     //attack
     public GameObject attackPoint;
     public float radius;
-    public LayerMask enemies;
+    public LayerMask enemiesLayer;
 
     public LayerMask groundLayer;
     public Transform groundCheck;
@@ -35,6 +38,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        Debug.Log($"MaxJumps: {maxJumps}, JumpCount: {jumpCount}");
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
@@ -45,11 +49,20 @@ public class Player : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        if (isGrounded && rb.linearVelocity.y <= 0)
+        {
+            // Reset licznika skok�w, je�li posta� dotyka ziemi
+            jumpCount = 0;
+            isJumping = false;
+            anim.SetBool("isJumping", false);
+        }
+
         // Jump
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            //isJumping = true;
+            jumpCount++;
+            isJumping = true;
             anim.SetBool("isJumping", true);
         }
 
@@ -73,10 +86,6 @@ public class Player : MonoBehaviour
             isJumping = false;
             anim.SetBool("isJumping", false);
         }
-        //else if (rb.linearVelocity.y < 0) // Opadanie
-        //{
-        //anim.SetBool("isJumping", true);
-        //}
 
         if (Input.GetMouseButton(0))
         {
@@ -98,13 +107,28 @@ public class Player : MonoBehaviour
     
     public void attack()
     {
-        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemies);
+        Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemiesLayer);
 
-        foreach(Collider2D enemyGameobject in enemy)
+        // Iterowanie po wykrytych obiektach
+        foreach (Collider2D enemy in enemies)
         {
-            Debug.Log("Hit enemy");
-            enemyGameobject.GetComponent<SkeletonsHealth>().skeletonHealth -= damage;
+            Debug.Log("Hit enemy!");
+
+            // Sprawdzanie, czy obiekt ma komponent SkeletonHealth
+            SkeletonHealth skeletonHealth = enemy.GetComponent<SkeletonHealth>();
+            if (skeletonHealth != null)
+            {
+                // Zadanie obra�e� przeciwnikowi
+                skeletonHealth.TakeDamage(damage);
+                Debug.Log("Damage dealt to enemy!");
+            }
         }
+
+    }
+
+    public void doubleJump()
+    {
+        maxJumps = 2;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -118,6 +142,7 @@ public class Player : MonoBehaviour
     private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(attackPoint.transform.position, radius);
+        Gizmos.color = Color.red;
     }
 
     void OnDrawGizmosSelected()
