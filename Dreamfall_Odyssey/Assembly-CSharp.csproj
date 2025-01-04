@@ -61,8 +61,13 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.25f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MikGlo\PlayerHealth.cs" />
+    <Compile Include="Assets\course_Prefabs\arrowThrower.cs" />
     <Compile Include="Assets\Scripts\MikGlo\EnemySkeleton.cs" />
+    <Compile Include="Assets\course_Prefabs\Arrow.cs" />
     <Compile Include="Assets\Scripts\MikGlo\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\MikGlo\Trap\MArrowThrower.cs" />
+    <Compile Include="Assets\Scripts\MikGlo\Trap\MArrow.cs" />
     <Compile Include="Assets\Scripts\General\Enemy.cs" />
   </ItemGroup>
   <ItemGroup>
