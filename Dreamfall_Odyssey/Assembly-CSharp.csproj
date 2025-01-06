@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\MikGlo\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\MikGlo\Trap2\Spike.cs" />
     <Compile Include="Assets\course_Prefabs\arrowThrower.cs" />
     <Compile Include="Assets\Scripts\MikGlo\EnemySkeleton.cs" />
     <Compile Include="Assets\course_Prefabs\Arrow.cs" />
