@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public PlayerMovementStats MoveStats;
     [SerializeField] private Collider2D feetCollider;
     [SerializeField] private Collider2D bodyCollider;
+    private Animator animator;
 
     [HideInInspector] public Rigidbody2D rb { get;private set; }
 
@@ -51,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         isFacingRight = true;
 
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -72,6 +74,9 @@ public class PlayerMovement : MonoBehaviour
         {
             Move(MoveStats.airAcceleration, MoveStats.airDeceleration, InputMenager.movement);
         }
+        animator.SetFloat("xSpeed",MathF.Abs(rb.linearVelocity.x));
+        
+   
     }
 
     private void Move(float acceleration, float deceleration, Vector2 moveInput) 
@@ -122,9 +127,10 @@ public class PlayerMovement : MonoBehaviour
         Vector2 boxCastSize = new Vector2(feetCollider.bounds.size.x, MoveStats.groundDetectionRayLenght);
 
         groundHit = Physics2D.BoxCast(boxCastOrigin, boxCastSize, 0f, Vector2.down, MoveStats.groundDetectionRayLenght, MoveStats.groundLayer);
-        if(groundHit.collider)
+        if(groundHit.collider && isFalling)
         {
             isGrounded = true;
+            animator.SetBool("IsJumping", false);
         }
         else
         {
@@ -141,6 +147,7 @@ public class PlayerMovement : MonoBehaviour
         if(groundHit.collider)
         {
             bumpedHead = true;
+           
         }
         else
         {
@@ -296,6 +303,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void InitiateJump(int _numberOfJumpsUsed)
     {
+        animator.SetBool("IsJumping", true);
         if (!isJumping)
         {
             isJumping = true;
@@ -303,6 +311,7 @@ public class PlayerMovement : MonoBehaviour
         jumpBufferTimer = 0f;
         numberOfJumpsUsed += _numberOfJumpsUsed;
         VerticalVelocity = MoveStats.InitialJumpVelocity;
+        
     }
 
 
