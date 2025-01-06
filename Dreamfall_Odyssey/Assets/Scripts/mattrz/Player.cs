@@ -14,7 +14,6 @@ namespace mattrz
         [SerializeField] private SpriteRenderer spriteRenderer;
 
         [SerializeField] private Animator animator;
-        [SerializeField] private LayerMask enemyLayer;
         [SerializeField] private ContactFilter2D GroundContactFilter;
 
         private static readonly int IsRunning = Animator.StringToHash("IsRunning");
@@ -38,15 +37,6 @@ namespace mattrz
             _rigidbody.linearVelocity = new Vector2(_horizontalVelocity, _rigidbody.linearVelocity.y);
 
             animator.SetBool(IsInAir, !IsGrounded);
-
-            if (IsGrounded)
-            {
-                _rigidbody.gravityScale = 20f;
-            }
-            else
-            {
-                _rigidbody.gravityScale = 4f;
-            }
         }
 
         public void OnMove(InputAction.CallbackContext ctx)
@@ -84,7 +74,7 @@ namespace mattrz
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (_collider.IsTouchingLayers(enemyLayer))
+            if (other.gameObject.CompareTag("Enemy"))
             {
                 if (other.contacts[0].normal.y > 0.5f)
                 {
@@ -93,18 +83,23 @@ namespace mattrz
                 }
                 else
                 {
-                    if (isInvincible) return;
-                    health--;
-                    Debug.Log("Health: " + health);
-                    if (health <= 0)
-                    {
-                        Destroy(gameObject);
-                    }
-                    else
-                    {
-                        StartCoroutine(InvincibilityCoroutine());
-                    }
+                    TakeDamage(1);
                 }
+            }
+        }
+
+        public void TakeDamage(int damage)
+        {
+            if (isInvincible) return;
+            health -= damage;
+            Debug.Log("Health: " + health);
+            if (health <= 0)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                StartCoroutine(InvincibilityCoroutine());
             }
         }
 
