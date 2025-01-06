@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/matsto/input/InputMenager.cs" />
+    <Compile Include="Assets/Scripts/matsto/player/PlayerDeathScript.cs" />
+    <Compile Include="Assets/Scripts/matsto/EnvDamageScript.cs" />
     <Compile Include="Assets/Scripts/matsto/player/PlayerMovementStats.cs" />
+    <Compile Include="Assets/Scripts/matsto/CameraScript.cs" />
     <Compile Include="Assets/Scripts/matsto/player/PlayerMovement.cs" />
     <Reference Include="UnityEngine">
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.25f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

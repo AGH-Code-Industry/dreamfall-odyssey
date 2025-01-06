@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -7,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Collider2D feetCollider;
     [SerializeField] private Collider2D bodyCollider;
 
-    private Rigidbody2D rb;
+    [HideInInspector] public Rigidbody2D rb { get;private set; }
 
     //movement vars
     private Vector2 moveVelocity;
@@ -40,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
 
     // coyote time vars
     private float coyoteTimer;
+    
+    private bool playerAlive = true;
 
 
     private void Awake()
@@ -73,7 +77,8 @@ public class PlayerMovement : MonoBehaviour
     private void Move(float acceleration, float deceleration, Vector2 moveInput) 
     {
         TurnCheck(moveInput);
-        if (moveInput != Vector2.zero)
+      
+        if (moveInput != Vector2.zero && playerAlive)
         {
             moveVelocity = Vector2.Lerp(moveVelocity,new Vector2(moveInput.x,0f)* MoveStats.maxWalkSpeed,acceleration*Time.fixedDeltaTime);
             rb.linearVelocity = new Vector2(moveVelocity.x, rb.linearVelocity.y);
@@ -229,6 +234,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void JumpChecks()
     {
+        if(!playerAlive) return; 
         if (InputMenager.jumpWasPressed)
         {
             jumpBufferTimer = MoveStats.JumpBufferTime;
@@ -312,6 +318,11 @@ public class PlayerMovement : MonoBehaviour
         {
             coyoteTimer = MoveStats.JumpCoyoteTime;
         }
+    }
+
+    public void PlayerDeathMovement()
+    {
+        playerAlive = false;
     }
 
 }

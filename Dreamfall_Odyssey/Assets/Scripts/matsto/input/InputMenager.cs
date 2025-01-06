@@ -30,4 +30,5 @@ public class InputMenager : MonoBehaviour
         jumpWasReleased = jumpAction.WasReleasedThisFrame();
 
     }
+
 }
