@@ -8,10 +8,26 @@ public class Enemy : MonoBehaviour
     public bool flipIsActive = true;
 
     public Vector3 target;
+    public Rigidbody2D body;
+    public float direction = -1.0f;
+
+    public LayerMask groundMask;
+    [SerializeField]
+    private BoxCollider2D bc;
+    private Vector2 colliderSize;
+    [SerializeField]
+    private float slopeCheckDistance;
+    private float slopeDownAngle;
+    private Vector2 slopeNormalPerp;
+    private bool isOnSlope;
+    private float slopeDownAngeOld;
+    private float slopeSideAngle;
+    // private bool canWalkoOnSlope;
 
     void Start()
     {
         target = pointA.position;
+        colliderSize = bc.size;
     }
 
     void Update()
@@ -19,10 +35,86 @@ public class Enemy : MonoBehaviour
         
     }
 
+    protected void SlopeCheck()
+    {
+        Vector2 checkPos = transform.position - new Vector3(0.0f, colliderSize.y / 2);
+
+        SlopeCheckHorizontal(checkPos);
+        SlopeCheckVertical(checkPos);
+    }
+
+    private void SlopeCheckHorizontal(Vector2 checkPos)
+    {
+        RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, slopeCheckDistance, groundMask);
+        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, slopeCheckDistance, groundMask);
+
+        if (slopeHitFront)
+        {
+            //Debug.Log("slopeHitFront");
+            isOnSlope = true;
+            slopeSideAngle = Vector2.Angle(slopeHitFront.normal, Vector2.up);
+        }
+        else if (slopeHitBack)
+        {
+            //Debug.Log("slopeHitBack");
+            isOnSlope = true;
+            slopeSideAngle = Vector2.Angle(slopeHitBack.normal, Vector2.up);
+        }
+        else
+        {
+            //Debug.Log("Else");
+            slopeSideAngle = 0.0f;
+            isOnSlope = false;
+        }
+    }
+
+    private void SlopeCheckVertical(Vector2 checkPos)
+    {
+        RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundMask);
+
+        if (hit)
+        {
+            slopeNormalPerp = Vector2.Perpendicular(hit.normal).normalized;
+
+            slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
+
+            if (slopeDownAngle != slopeDownAngeOld)
+            {
+                Debug.Log("IS ON SLOPE");
+                isOnSlope = true;
+            }
+
+            slopeDownAngeOld = slopeDownAngle;
+
+            Debug.DrawRay(hit.point, slopeNormalPerp, Color.red);
+            Debug.DrawRay(hit.point, hit.normal, Color.green);
+        }
+
+        /*if (slopeDownAngle > maxSlopeAngle || slopeSideAngle > maxSlopeAngle)
+        {
+            canWalkoOnSlope = false;
+        }
+        else
+        {
+            canWalkoOnSlope = true;
+        }*/
+
+        /*if (isOnSlope && xInput == 0.0f && canWalkoOnSlope)
+        {
+            body.sharedMaterial = fullFriction;
+        }
+        else
+        {
+            body.sharedMaterial = null;
+        }*/
+    }
+
     public void Patrol()
     {
-        Debug.Log(target);
-        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        SlopeCheck();
+        //Debug.Log("TARGET:" + target);
+        // Debug.Log("Transform.position:" + Vector3.Distance(transform.position, target));
+        /*transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
         if (flipIsActive)
         {
             FlipTowards(target);
@@ -31,6 +123,37 @@ public class Enemy : MonoBehaviour
         {
             target = target == pointA.position ? pointB.position : pointA.position;
             // transform.localScale = new Vector2(transform.localScale.x * -1, transform.localScale.y);
+        }*/
+        // Debug.Log("Velocity: " + body.linearVelocity);
+        // Wyznaczenie kierunku ruchu
+
+        // Ustawienie prï¿½dkoï¿½ci w kierunku celu
+        //body.linearVelocity = new Vector2(direction * speed, body.linearVelocity.y);
+
+        if (isOnSlope)
+        {
+            body.linearVelocity = new Vector2(direction * slopeNormalPerp.x * speed, slopeNormalPerp.y * speed);
+        }
+        else if (!isOnSlope)
+        {
+            body.linearVelocity = new Vector2(direction * speed, 0.0f);
+        }
+
+        // Sprawdzenie odlegï¿½oï¿½ci do celu
+        if (Vector3.Distance(transform.position, target) < 0.2f)
+        {
+            // Zmiana celu na przeciwny punkt
+            target = target == pointA.position ? pointB.position : pointA.position;
+            direction = -direction;
+
+            // Debugging: Informacja o zmianie celu
+            Debug.Log("Target reached. New target: " + target);
+        }
+
+        // Obracanie przeciwnika w kierunku ruchu
+        if (flipIsActive)
+        {
+            FlipTowards(target);
         }
     }
 
@@ -38,18 +161,20 @@ public class Enemy : MonoBehaviour
     {
         // Debug.Log("Grzyb: "+transform.position);
         // Debug.Log("Target: " + targetPosition);
-        // Obraca przeciwnika w zale¿noœci od kierunku
-        if (targetPosition.x > transform.position.x)
+        // Obraca przeciwnika w zaleï¿½noï¿½ci od kierunku
+        if (targetPosition.x >= transform.position.x && transform.localScale.x < 0)
         {
             // Ruch w prawo
             transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y); // Skaluj w prawo
-            Debug.Log("PRAWO");
+            direction = 1;
+            // Debug.Log("PRAWO");
         }
-        if (targetPosition.x < transform.position.x)
+        if (targetPosition.x < transform.position.x && transform.localScale.x > 0)
         {
             // Ruch w lewo
             transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y); // Skaluj w lewo
-            Debug.Log("LEWO");
+            direction = -1;
+            // Debug.Log("LEWO");
         }
     }
 }
