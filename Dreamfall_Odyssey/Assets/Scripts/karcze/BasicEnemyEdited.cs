@@ -11,10 +11,10 @@ public class EnemyAI : MonoBehaviour
     }
 
     public EnemyState currentState = EnemyState.Idle;
-    public float moveSpeed = 2f;
-    public float attackRange = 2f;
+    protected float moveSpeed = 2f;
+    protected float attackRange = 2f;
     public float attackCooldown = 1f;
-    public float detectionRange = 3f;
+    protected float detectionRange = 3f;
     protected bool isAttacking;
 
     protected float lastAttackTime;

@@ -13,10 +13,8 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded;
-    private bool isJumping;
     private bool isAttacking;
 
-    //attack
     public GameObject attackPoint;
     public float radius;
     public LayerMask enemiesLayer;
@@ -51,18 +49,14 @@ public class Player : MonoBehaviour
 
         if (isGrounded && rb.linearVelocity.y <= 0)
         {
-            // Reset licznika skok�w, je�li posta� dotyka ziemi
             jumpCount = 0;
-            isJumping = false;
             anim.SetBool("isJumping", false);
         }
 
-        // Jump
         if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpCount++;
-            isJumping = true;
             anim.SetBool("isJumping", true);
         }
 
@@ -83,7 +77,6 @@ public class Player : MonoBehaviour
 
         if (isGrounded && rb.linearVelocity.y <= 0)
         {
-            isJumping = false;
             anim.SetBool("isJumping", false);
         }
 
@@ -109,18 +102,22 @@ public class Player : MonoBehaviour
     {
         Collider2D[] enemies = Physics2D.OverlapCircleAll(attackPoint.transform.position, radius, enemiesLayer);
 
-        // Iterowanie po wykrytych obiektach
         foreach (Collider2D enemy in enemies)
         {
             Debug.Log("Hit enemy!");
 
-            // Sprawdzanie, czy obiekt ma komponent SkeletonHealth
             SkeletonHealth skeletonHealth = enemy.GetComponent<SkeletonHealth>();
             if (skeletonHealth != null)
             {
-                // Zadanie obra�e� przeciwnikowi
                 skeletonHealth.TakeDamage(damage);
-                Debug.Log("Damage dealt to enemy!");
+                Debug.Log("Damage dealt to skeleton!");
+            }
+
+            NecromancerHealth necromancerHealth = enemy.GetComponent<NecromancerHealth>();
+            if (necromancerHealth != null)
+            {
+                necromancerHealth.TakeDamage(damage);
+                Debug.Log("Damage dealt to necromancer!");
             }
         }
 

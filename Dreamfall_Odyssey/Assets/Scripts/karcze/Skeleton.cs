@@ -24,7 +24,6 @@ public class Skeleton : EnemyAI
             PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(skeletonDamage);
                 anim.SetBool("isAttacking", true);
             }
         }
@@ -33,12 +32,10 @@ public class Skeleton : EnemyAI
     {
         Debug.Log("Przeciwnik goni gracza.");
 
-        if (player == null) return; // Jeśli nie ma gracza, zakończ działanie
+        if (player == null) return;
 
-        // Oblicz kierunek w 2D
         Vector2 direction = (player.position - transform.position).normalized;
 
-        // Uzyskaj dostęp do komponentu Rigidbody2D
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
 
         if (rb != null)
@@ -48,11 +45,11 @@ public class Skeleton : EnemyAI
 
         }
 
-        if (direction.x > 0 && lastDirectionX <= 0) // Przeciwnik zaczyna iść w prawo
+        if (direction.x > 0 && lastDirectionX <= 0)
         {
             Flip();
         }
-        else if (direction.x < 0 && lastDirectionX >= 0) // Przeciwnik zaczyna iść w lewo
+        else if (direction.x < 0 && lastDirectionX >= 0)
         {
             Flip();
         }
@@ -73,6 +70,15 @@ public class Skeleton : EnemyAI
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    private void attack()
+    {
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(skeletonDamage);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D other)

@@ -9,7 +9,9 @@ public class PlayerHealth : MonoBehaviour
     Animator animator;
 
     private bool canTakeDamage = true;
-    public float invulnerabilityDuration = 1f;
+
+    // to aktualnie trochê nie jest potrzebne, ale mo¿e jeszcze mi siê kiedyœ przyda
+    public float invulnerabilityDuration = 0f;
 
     private void Start()
     {
@@ -37,7 +39,6 @@ public class PlayerHealth : MonoBehaviour
     {
         Debug.Log("Gracz zgin¹³!");
         canTakeDamage = false;
-        invulnerabilityDuration = 2f;
         animator.SetTrigger("Die");
     }
 
@@ -45,7 +46,6 @@ public class PlayerHealth : MonoBehaviour
     {
         transform.position = initialPosition;
         currentHealth = maxHealth;
-        invulnerabilityDuration = 1f;
         canTakeDamage = false;
 
         Invoke(nameof(ResetCanTakeDamage), invulnerabilityDuration);
