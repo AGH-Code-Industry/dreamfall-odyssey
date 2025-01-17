@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class MyEnemyAI : MonoBehaviour
 {
     public enum EnemyState
     {

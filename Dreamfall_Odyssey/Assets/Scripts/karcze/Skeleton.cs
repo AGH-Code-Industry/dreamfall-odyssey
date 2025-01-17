@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class Skeleton : EnemyAI
+public class Skeleton : MyEnemyAI
 {
     private Animator anim;
     public int skeletonDamage = 5;

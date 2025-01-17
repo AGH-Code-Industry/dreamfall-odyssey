@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Necromancer : EnemyAI
+public class Necromancer : MyEnemyAI
 {
     private Animator anim;
     private Rigidbody2D rb;
