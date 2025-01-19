@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/EntryPoint.unity
+    guid: 6e137be2611bcd44db50ae7475561e87
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 9204cc440941ed241ab3a24b3f524dd7
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/MergingSystem1.unity
+    guid: 31217e42e1d664145ba1402176cc74f2
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/MergingSystem2.unity
+    guid: 1b21bc16a8fc9cb46ab22816f4517cac
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

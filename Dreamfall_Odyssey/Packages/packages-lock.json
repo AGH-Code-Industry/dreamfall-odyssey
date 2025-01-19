@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.aghcoin.coinpkg.debugging": {
+      "version": "https://github.com/aghcoin/coinpkg.debugging.new.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8f423698e7958c59eff22ba928019a939847d524"
+    },
     "com.unity.2d.animation": {
       "version": "10.1.3",
       "depth": 1,
