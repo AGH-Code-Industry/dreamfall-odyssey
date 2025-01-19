@@ -54,6 +54,7 @@ public class EnemyMovement : Enemy
 
         if (isChasing)
         {
+            // SlopeCheck();
             if (Vector2.Distance(transform.position, playerTransform.position) >= chaseDistance)
             {
                 isChasing = false;
@@ -80,6 +81,7 @@ public class EnemyMovement : Enemy
                 isChasing = true;
             }
             Patrol();
+            //SlopeCheck();
         }
     }
 }

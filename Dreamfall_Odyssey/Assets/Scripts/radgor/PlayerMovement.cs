@@ -107,8 +107,8 @@ public class PlayerMovement : MonoBehaviour
             slopeNormalPerp = Vector2.Perpendicular(hit.normal).normalized;
 
             slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
-
-            if(slopeDownAngle != slopeDownAngeOld)
+            
+            if (slopeDownAngle > 10)
             {
                 isOnSlope = true;
             }

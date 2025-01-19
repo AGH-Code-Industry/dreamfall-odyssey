@@ -54106,10 +54106,10 @@ MonoBehaviour:
   grounded: 0
   startingPosition: {x: -2, y: -0.2}
   bc: {fileID: 985734312}
-  slopeCheckDistance: 50
+  slopeCheckDistance: 2
   noFriction: {fileID: 6200000, guid: 7e19530a6614c104996b95eff8999b89, type: 2}
   fullFriction: {fileID: 6200000, guid: 46d79cd6c3431b94c9489096971fb469, type: 2}
-  maxSlopeAngle: 60
+  maxSlopeAngle: 9999
 --- !u!114 &437216833
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68831,7 +68831,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   bc: {fileID: 1247400219}
-  slopeCheckDistance: 20
+  slopeCheckDistance: 2
   isChasing: 0
   playerTransform: {fileID: 437216831}
   chaseDistance: 5
@@ -69119,7 +69119,7 @@ GameObject:
   - component: {fileID: 1339821732}
   - component: {fileID: 1339821731}
   - component: {fileID: 1339821730}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71610,7 +71610,7 @@ Transform:
   m_GameObject: {fileID: 1358938025}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.67, y: -2.36, z: 0}
+  m_LocalPosition: {x: 61.36, y: -2.2, z: 0}
   m_LocalScale: {x: 10.5264, y: 15.0744, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -168825,7 +168825,7 @@ Transform:
   m_GameObject: {fileID: 2085019631}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 30.27, y: -3.4, z: 0}
+  m_LocalPosition: {x: 30.61, y: -3.4, z: 0}
   m_LocalScale: {x: 10.0208, y: 13.8112, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

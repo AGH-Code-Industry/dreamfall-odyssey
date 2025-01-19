@@ -46,7 +46,10 @@ public class Enemy : MonoBehaviour
     private void SlopeCheckHorizontal(Vector2 checkPos)
     {
         RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, slopeCheckDistance, groundMask);
-        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, slopeCheckDistance, groundMask);
+        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right * 2, slopeCheckDistance, groundMask);
+
+        Debug.DrawRay(checkPos, transform.right * slopeCheckDistance, Color.red);  // Rysuje promień do przodu
+        Debug.DrawRay(checkPos, -transform.right * slopeCheckDistance, Color.blue); // Rysuje promień do tyłu
 
         if (slopeHitFront)
         {
@@ -72,20 +75,23 @@ public class Enemy : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundMask);
 
+        Debug.DrawRay(checkPos, Vector2.down * slopeCheckDistance, Color.green); // Rysuje promień w dół
+
         if (hit)
         {
+            Debug.Log("dziala");
             slopeNormalPerp = Vector2.Perpendicular(hit.normal).normalized;
 
             slopeDownAngle = Vector2.Angle(hit.normal, Vector2.up);
-
-            if (slopeDownAngle != slopeDownAngeOld)
+            Debug.Log("Angle: " + slopeDownAngle);
+            if (slopeDownAngle > 10)
             {
                 Debug.Log("IS ON SLOPE");
                 isOnSlope = true;
             }
 
             slopeDownAngeOld = slopeDownAngle;
-
+           
             Debug.DrawRay(hit.point, slopeNormalPerp, Color.red);
             Debug.DrawRay(hit.point, hit.normal, Color.green);
         }
@@ -112,6 +118,7 @@ public class Enemy : MonoBehaviour
     public void Patrol()
     {
         SlopeCheck();
+
         //Debug.Log("TARGET:" + target);
         // Debug.Log("Transform.position:" + Vector3.Distance(transform.position, target));
         /*transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
@@ -129,18 +136,19 @@ public class Enemy : MonoBehaviour
 
         // Ustawienie pr�dko�ci w kierunku celu
         //body.linearVelocity = new Vector2(direction * speed, body.linearVelocity.y);
-
         if (isOnSlope)
         {
-            body.linearVelocity = new Vector2(direction * slopeNormalPerp.x * speed, slopeNormalPerp.y * speed);
+            body.linearVelocity = new Vector2(speed*2 * slopeNormalPerp.x * -direction, speed*2 * slopeNormalPerp.y * -direction);
+            Debug.Log("Joł");
         }
         else if (!isOnSlope)
         {
+            Debug.Log("direction: " + direction);
             body.linearVelocity = new Vector2(direction * speed, 0.0f);
         }
 
         // Sprawdzenie odleg�o�ci do celu
-        if (Vector3.Distance(transform.position, target) < 0.2f)
+        if (Vector3.Distance(transform.position, target) < 0.5f)
         {
             // Zmiana celu na przeciwny punkt
             target = target == pointA.position ? pointB.position : pointA.position;
@@ -162,14 +170,14 @@ public class Enemy : MonoBehaviour
         // Debug.Log("Grzyb: "+transform.position);
         // Debug.Log("Target: " + targetPosition);
         // Obraca przeciwnika w zale�no�ci od kierunku
-        if (targetPosition.x >= transform.position.x && transform.localScale.x < 0)
+        if (targetPosition.x > transform.position.x)
         {
             // Ruch w prawo
             transform.localScale = new Vector2(Mathf.Abs(transform.localScale.x), transform.localScale.y); // Skaluj w prawo
             direction = 1;
             // Debug.Log("PRAWO");
         }
-        if (targetPosition.x < transform.position.x && transform.localScale.x > 0)
+        if (targetPosition.x < transform.position.x)
         {
             // Ruch w lewo
             transform.localScale = new Vector2(-Mathf.Abs(transform.localScale.x), transform.localScale.y); // Skaluj w lewo
