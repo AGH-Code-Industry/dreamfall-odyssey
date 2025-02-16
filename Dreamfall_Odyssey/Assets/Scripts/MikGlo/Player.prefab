@@ -387,5 +387,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  respawnPoint: {fileID: 0}
-  playerPrefab: {fileID: 3079212907597173736}
