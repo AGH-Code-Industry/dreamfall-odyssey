@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
 
     protected void SlopeCheck()
     {
-        Vector2 checkPos = transform.position - new Vector3(0.0f, colliderSize.y / 2);
+        Vector2 checkPos = transform.position - new Vector3(0.0f, colliderSize.y - colliderSize.y + 1.0f);
 
         SlopeCheckHorizontal(checkPos);
         SlopeCheckVertical(checkPos);
@@ -46,7 +46,7 @@ public class Enemy : MonoBehaviour
     private void SlopeCheckHorizontal(Vector2 checkPos)
     {
         RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, slopeCheckDistance, groundMask);
-        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right * 2, slopeCheckDistance, groundMask);
+        RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, slopeCheckDistance, groundMask);
 
         Debug.DrawRay(checkPos, transform.right * slopeCheckDistance, Color.red);  // Rysuje promień do przodu
         Debug.DrawRay(checkPos, -transform.right * slopeCheckDistance, Color.blue); // Rysuje promień do tyłu
@@ -138,7 +138,7 @@ public class Enemy : MonoBehaviour
         //body.linearVelocity = new Vector2(direction * speed, body.linearVelocity.y);
         if (isOnSlope)
         {
-            body.linearVelocity = new Vector2(speed*2 * slopeNormalPerp.x * -direction, speed*2 * slopeNormalPerp.y * -direction);
+            body.linearVelocity = new Vector2(speed*1.5f * slopeNormalPerp.x * -direction, speed * slopeNormalPerp.y * -direction);
             Debug.Log("Joł");
         }
         else if (!isOnSlope)

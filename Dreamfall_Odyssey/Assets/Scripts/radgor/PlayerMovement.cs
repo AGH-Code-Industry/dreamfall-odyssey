@@ -81,6 +81,10 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D slopeHitFront = Physics2D.Raycast(checkPos, transform.right, slopeCheckDistance, groundMask);
         RaycastHit2D slopeHitBack = Physics2D.Raycast(checkPos, -transform.right, slopeCheckDistance, groundMask);
 
+
+        Debug.DrawRay(checkPos, transform.right * slopeCheckDistance, Color.red);  // Rysuje promieñ do przodu
+        Debug.DrawRay(checkPos, -transform.right * slopeCheckDistance, Color.blue); // Rysuje promieñ do ty³u
+
         if (slopeHitFront)
         {
             isOnSlope = true;
@@ -98,9 +102,21 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    /* private void StickToGround()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 2f,  groundMask);
+
+        if(hit.collider != null)
+        {
+            transform.position = new Vector2(transform.position.x, hit.point.y + 1.2f);
+        }
+    } */
+
     private void SlopeCheckVertical(Vector2 checkPos)
     {
         RaycastHit2D hit = Physics2D.Raycast(checkPos, Vector2.down, slopeCheckDistance, groundMask);
+
+        Debug.DrawRay(checkPos, Vector2.down * slopeCheckDistance, Color.green); // Rysuje promieñ w dó³
 
         if (hit)
         {
@@ -154,6 +170,7 @@ public class PlayerMovement : MonoBehaviour
             }
             else if(grounded && isOnSlope && !isJumping && canWalkoOnSlope)
             {
+                //StickToGround();
                 body.linearVelocity = new Vector2(groundSpeed * slopeNormalPerp.x * -xInput, groundSpeed * slopeNormalPerp.y * -xInput);
             }
             else if(!grounded) 

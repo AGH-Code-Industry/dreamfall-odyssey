@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4b2e32543d448314db8845d986a83987
+guid: a9cb41678071e4e4ab05fe926a5ad901
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -859,7 +859,37 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Ranger- Base_0: -3474364980188826942
+      Ranger- Base_1: 4425180081191613725
+      Ranger- Base_10: 4567644426035145743
+      Ranger- Base_11: 331370561515609126
+      Ranger- Base_12: 5925584832960834874
+      Ranger- Base_13: 8898007646138650066
+      Ranger- Base_14: -3073978287323546669
+      Ranger- Base_15: 961851798749756565
+      Ranger- Base_16: 6717497585504298418
+      Ranger- Base_17: 5605363600609713181
+      Ranger- Base_18: 3722375052286514557
+      Ranger- Base_19: -5206368107036274815
+      Ranger- Base_2: 1417666824034309053
+      Ranger- Base_20: 4770982142536587987
+      Ranger- Base_21: -567375413592649160
+      Ranger- Base_22: -2350165102296315296
+      Ranger- Base_23: 7738330900755754468
+      Ranger- Base_24: 268155742793164717
+      Ranger- Base_25: -8543571026361540573
+      Ranger- Base_26: 784341551818673948
+      Ranger- Base_27: -1439899352347617944
+      Ranger- Base_28: -7561354872965167159
+      Ranger- Base_29: 8325816292658800929
+      Ranger- Base_3: 738859691970261697
+      Ranger- Base_4: -3607002610830197855
+      Ranger- Base_5: -1876147631844396684
+      Ranger- Base_6: -8658586999621985618
+      Ranger- Base_7: -7966113454540470515
+      Ranger- Base_8: -743224604932136844
+      Ranger- Base_9: 678121617181764429
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

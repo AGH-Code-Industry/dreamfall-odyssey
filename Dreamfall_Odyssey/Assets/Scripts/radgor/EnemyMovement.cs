@@ -14,12 +14,12 @@ public class EnemyMovement : Enemy
     void Start()
     {
         target = pointA.position;
+        animator.SetFloat("Blend", 1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        animator.SetFloat("xVelocity", 1);
         
 
         /*if (isChasing)

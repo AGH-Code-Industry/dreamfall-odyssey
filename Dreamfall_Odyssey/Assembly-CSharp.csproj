@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <!-- Generated file, do not modify, your changes will be overwritten (use AssetPostprocessor.OnGeneratedCSProject) -->
   <PropertyGroup>
@@ -62,10 +62,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\radgor\Enemy.cs" />
+    <Compile Include="Assets\Scripts\radgor\Parallax.cs" />
     <Compile Include="Assets\Scripts\radgor\MonsterDamage.cs" />
     <Compile Include="Assets\Scripts\radgor\HallucinationManager.cs" />
     <Compile Include="Assets\Scripts\radgor\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\radgor\SpecialMuschroom.cs" />
+    <Compile Include="Assets\Scripts\radgor\ParallaxController.cs" />
     <Compile Include="Assets\Scripts\radgor\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\radgor\PlayerHealth.cs" />
   </ItemGroup>
