@@ -66,7 +66,6 @@ public class MyEnemyAI : MonoBehaviour
     // Funkcja dla stanu "Idle" – co robi przeciwnik, gdy nikogo nie widzi
     protected virtual void IdleState()
     {
-        Debug.Log("Przeciwnik jest w stanie Idle.");
 
         // Tutaj mo¿na dodaæ w³asne zachowanie przeciwnika w stanie Idle
         // Na przyk³ad, przeciwnik mo¿e patrzeæ w ró¿nych kierunkach, szukaæ gracza itp.
@@ -84,7 +83,6 @@ public class MyEnemyAI : MonoBehaviour
     // Funkcja dla stanu "Chase" – co robi przeciwnik, gdy widzi gracza i go œciga
     protected virtual void ChaseState()
     {
-        Debug.Log("Przeciwnik goni gracza.");
 
         if (player == null) return; // Jeœli nie ma gracza, zakoñcz dzia³anie
 
@@ -101,7 +99,6 @@ public class MyEnemyAI : MonoBehaviour
         isAttacking = true;
         lastAttackTime = Time.time;
 
-        Debug.Log("Atakujê gracza!");
 
         // Dodaj w³asn¹ logikê ataku (np. zadawanie obra¿eñ graczowi)
 

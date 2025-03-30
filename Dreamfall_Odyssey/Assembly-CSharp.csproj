@@ -62,12 +62,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\karcze\Skeleton.cs" />
+    <Compile Include="Assets\Scripts\karcze\Sword.cs" />
     <Compile Include="Assets\Scripts\karcze\HPScore.cs" />
     <Compile Include="Assets\Scripts\karcze\EmeraldScore.cs" />
+    <Compile Include="Assets\Scripts\karcze\Portal.cs" />
     <Compile Include="Assets\Scripts\karcze\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\karcze\Chest.cs" />
+    <Compile Include="Assets\course_Prefabs\arrowThrower.cs" />
     <Compile Include="Assets\Scripts\karcze\HealthCrystal.cs" />
     <Compile Include="Assets\Scripts\karcze\SkeletonHealth.cs" />
     <Compile Include="Assets\Scripts\karcze\Player.cs" />
+    <Compile Include="Assets\course_Prefabs\Arrow.cs" />
     <Compile Include="Assets\Scripts\karcze\Necromancer.cs" />
     <Compile Include="Assets\Scripts\karcze\NecromancerSpell.cs" />
     <Compile Include="Assets\Scripts\karcze\BasicEnemyEdited.cs" />

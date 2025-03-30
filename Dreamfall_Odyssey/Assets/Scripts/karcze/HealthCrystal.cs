@@ -7,7 +7,7 @@ public class HealthCrystal : MonoBehaviour
 
     private void Start()
     {
-        uiManager = FindObjectOfType<UIManager>();
+        uiManager = Object.FindFirstObjectByType<UIManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,7 +17,7 @@ public class HealthCrystal : MonoBehaviour
             PlayerHealth playerHealth = collision.GetComponent<PlayerHealth>();
             if (playerHealth != null)
             {
-                playerHealth.maxHealth = 80;
+                playerHealth.maxHealth = playerHealth.maxHealth + 20;
                 playerHealth.currentHealth = playerHealth.maxHealth;
             }
 

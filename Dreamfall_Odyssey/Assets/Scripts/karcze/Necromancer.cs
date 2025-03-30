@@ -10,10 +10,15 @@ public class Necromancer : MyEnemyAI
 
     // Do spella
     public GameObject spellPrefab;
+    public GameObject SkeletonPrefab;
     public Transform spellPoint;
-    public float spellRate = 1f;
+    public float spellRate = 0.5f;
     public float spellSpeed = 6f;
     private float nextSpellTime;
+
+    // do resurrection
+    private bool resurrected1 = false;
+    private bool resurrected2 = false;
 
     private void Awake()
     {
@@ -25,13 +30,12 @@ public class Necromancer : MyEnemyAI
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         moveSpeed = 0.75f;
-        detectionRange = 8f;
-        attackRange = 5f;
+        detectionRange = 9f;
+        attackRange = 4f;
     }
 
     protected override void ChaseState()
     {
-        Debug.Log("Przeciwnik goni gracza.");
 
         if (player == null) return; // Jeśli nie ma gracza, zakończ działanie
 
@@ -55,6 +59,17 @@ public class Necromancer : MyEnemyAI
         {
             CastSpell();
             nextSpellTime = Time.time + 1f / spellRate;
+            NecromancerHealth necromancerHealth = GetComponent<NecromancerHealth>();
+            if (necromancerHealth.necromancerCurrentHealth <= 20 && !resurrected1)
+            {
+                Resurrect();
+                resurrected1 = true;
+            }
+            if (necromancerHealth.necromancerCurrentHealth <= 10 && !resurrected2)
+            {
+                Resurrect();
+                resurrected2 = true;
+            }
         }
     }
 
@@ -81,6 +96,11 @@ public class Necromancer : MyEnemyAI
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    private void Resurrect()
+    {
+        GameObject resurrectedSkeleton = Instantiate(SkeletonPrefab, spellPoint.position, spellPoint.rotation);
     }
 
 }

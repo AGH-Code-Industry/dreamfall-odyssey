@@ -8,11 +8,13 @@ public class SkeletonHealth : MonoBehaviour
 
     public GameObject JumpCrystalPrefab;
     public GameObject EmeraldPrefab;
+    public GameObject HealthCrystalPrefab;
     public DropType dropType;
     public enum DropType
     {
         JumpCrystal,
-        Emerald
+        Emerald,
+        HealthCrystal
     }
 
     private Animator animator;
@@ -26,6 +28,7 @@ public class SkeletonHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         skeletonCurrentHealth -= damage;
+        animator.SetBool("isHit", true);
         Debug.Log($"Skeleton otrzyma³ {damage} obra¿eñ. Pozosta³o zdrowia: {skeletonCurrentHealth}");
 
         if (skeletonCurrentHealth <= 0)
@@ -33,6 +36,11 @@ public class SkeletonHealth : MonoBehaviour
             animator.SetBool("isDead", true);
             Drop();
         }
+    }
+
+    public void EndHit()
+    {
+        animator.SetBool("isHit", false);
     }
 
     public void Die()
@@ -50,6 +58,10 @@ public class SkeletonHealth : MonoBehaviour
         else if (dropType == DropType.Emerald)
         {
             Instantiate(EmeraldPrefab, transform.position, Quaternion.identity);
+        }
+        else if (dropType == DropType.HealthCrystal)
+        {
+            Instantiate(HealthCrystalPrefab, transform.position, Quaternion.identity);
         }
     }
 }

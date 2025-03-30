@@ -14,7 +14,12 @@ public class EmeraldScore : MonoBehaviour
     public void AddScore(int amount)
     {
         score += amount;
-        Debug.Log("Aktualny wynik: " + score);
+        UpdateScoreText();
+    }
+
+    public void ResetScore()
+    {
+        score = 0;
         UpdateScoreText();
     }
 

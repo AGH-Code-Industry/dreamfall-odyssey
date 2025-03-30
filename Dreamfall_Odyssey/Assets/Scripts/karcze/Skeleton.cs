@@ -14,6 +14,8 @@ public class Skeleton : MyEnemyAI
         SkeletonHealth = GetComponent<SkeletonHealth>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        lastDirectionX = transform.localScale.x > 0 ? 1 : -1;
     }
 
     protected override void AttackState()
@@ -30,7 +32,6 @@ public class Skeleton : MyEnemyAI
     }
     protected override void ChaseState()
     {
-        Debug.Log("Przeciwnik goni gracza.");
 
         if (player == null) return;
 
@@ -60,7 +61,6 @@ public class Skeleton : MyEnemyAI
 
     protected override void IdleState()
     {
-        Debug.Log("Przeciwnik jest w stanie Idle.");
         anim.SetBool("isMoving", false);
         anim.SetBool("isAttacking", false);
     }
@@ -71,6 +71,7 @@ public class Skeleton : MyEnemyAI
         localScale.x *= -1;
         transform.localScale = localScale;
     }
+
 
     private void attack()
     {

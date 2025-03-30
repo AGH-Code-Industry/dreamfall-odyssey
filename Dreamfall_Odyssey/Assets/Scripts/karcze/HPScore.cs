@@ -10,9 +10,14 @@ public class HPScore : MonoBehaviour
 
     private void Update()
     {
-        if (playerHealth != null && healthText != null)
+        if (playerHealth != null && healthText != null )
         {
             healthText.text = $"HP: {playerHealth.currentHealth} / {playerHealth.maxHealth}";
+
+            if (playerHealth.currentHealth < 0)
+            {
+                healthText.text = $"HP: 0 / {playerHealth.maxHealth}";
+            }
         }
     }
 }

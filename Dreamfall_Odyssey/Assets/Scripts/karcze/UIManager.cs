@@ -6,12 +6,14 @@ public class UIManager : MonoBehaviour
 {
     public TMP_Text messageTextJump;
     public TMP_Text messageTextHealth;
+    public TMP_Text messageTextSword;
     public float displayTime = 3f;
 
     private void Start()
     {
         messageTextJump.alpha = 0;
         messageTextHealth.alpha = 0;
+        messageTextSword.alpha = 0;
     }
 
     public void ShowMessageJump(string message)
@@ -28,9 +30,17 @@ public class UIManager : MonoBehaviour
         Invoke(nameof(HideMessage), displayTime);
     }
 
+    public void ShowMessageSword(string message)
+    {
+        messageTextSword.text = message;
+        messageTextSword.alpha = 255;
+        Invoke(nameof(HideMessage), displayTime);
+    }
+
     private void HideMessage()
     {
         messageTextJump.alpha = 0;
         messageTextHealth.alpha = 0;
+        messageTextSword.alpha = 0;
     }
 }

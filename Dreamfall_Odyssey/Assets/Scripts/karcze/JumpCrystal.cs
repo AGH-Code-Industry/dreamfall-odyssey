@@ -8,7 +8,7 @@ public class JumpCrystal : MonoBehaviour
 
     private void Start()
     {
-        uiManager = FindObjectOfType<UIManager>();
+        uiManager = Object.FindFirstObjectByType<UIManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
@@ -8,51 +9,70 @@ public class PlayerHealth : MonoBehaviour
 
     Animator animator;
 
-    private bool canTakeDamage = true;
+    public GameObject emerald;
+    private EmeraldScore emeraldScore;
+
+    public bool canTakeDamage = true;
 
     // to aktualnie trochê nie jest potrzebne, ale mo¿e jeszcze mi siê kiedyœ przyda
-    public float invulnerabilityDuration = 0f;
+    public float invulnerabilityDuration = 2f;
 
     private void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
+        emeraldScore = UnityEngine.Object.FindFirstObjectByType<EmeraldScore>();
     }
 
     public void TakeDamage(int damage)
     {
         if (!canTakeDamage) return;
 
-        canTakeDamage = false;
         currentHealth -= damage;
+        animator.SetBool("isHit", true);
         Debug.Log($"Gracz otrzyma³ {damage} obra¿eñ. Pozosta³o zdrowia: {currentHealth}");
 
         if (currentHealth <= 0)
         {
+            canTakeDamage = false;
             Die();
         }
 
-        Invoke(nameof(ResetCanTakeDamage), invulnerabilityDuration);
     }
 
     public void Die()
     {
         Debug.Log("Gracz zgin¹³!");
-        canTakeDamage = false;
         animator.SetTrigger("Die");
+    }
+
+    public void EndHit()
+    {
+        animator.SetBool("isHit", false);
     }
 
     public void ResetPlayer()
     {
         transform.position = initialPosition;
         currentHealth = maxHealth;
-        canTakeDamage = false;
-
-        Invoke(nameof(ResetCanTakeDamage), invulnerabilityDuration);
-    }
-
-    private void ResetCanTakeDamage()
-    {
         canTakeDamage = true;
     }
+
+    public void Drop()
+    { 
+        Player player = GetComponent<Player>();
+        for (int i = 0; i < emeraldScore.score; i++)
+        {
+            float randomOffsetX = UnityEngine.Random.Range(1f, 2f);
+            Vector3 spawnPosition = player.attackPoint.transform.position + new Vector3(randomOffsetX, 0, 0);
+            
+            Instantiate(emerald, spawnPosition, Quaternion.identity);
+        }
+        emeraldScore.ResetScore();
+    }
+
+    /*private void ResetCanTakeDamage()
+    {
+        canTakeDamage = true;
+    }*/
 }

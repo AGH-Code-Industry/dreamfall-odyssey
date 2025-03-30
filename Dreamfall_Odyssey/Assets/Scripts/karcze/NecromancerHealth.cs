@@ -6,6 +6,8 @@ public class NecromancerHealth : MonoBehaviour
     public int necromancerCurrentHealth;
     public Vector2 necromancerInitialPosition;
 
+    public bool isDefeated = false;
+
     public GameObject HealthCrystalPrefab;
 
     private Animator animator;
@@ -30,6 +32,7 @@ public class NecromancerHealth : MonoBehaviour
     public void Die()
     {
         Debug.Log("Necromancer zgin¹³!");
+        isDefeated = true;
         Destroy(gameObject);
     }
 

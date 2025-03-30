@@ -36,7 +36,6 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        Debug.Log($"MaxJumps: {maxJumps}, JumpCount: {jumpCount}");
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
@@ -85,6 +84,11 @@ public class Player : MonoBehaviour
             anim.SetBool("isAttacking", true);
         }
 
+        if (Input.GetMouseButton(1))
+        {
+            Block();
+        }
+
         anim.SetBool("isRunning", Mathf.Abs(moveInput) > 0);
     }
 
@@ -121,6 +125,20 @@ public class Player : MonoBehaviour
             }
         }
 
+    }
+
+    public void Block()
+    {
+        anim.SetBool("isBlocking", true);
+        PlayerHealth playerHealth = GetComponent<PlayerHealth>();
+        playerHealth.canTakeDamage = false;
+    }
+
+    public void EndBlock()
+    {
+        anim.SetBool("isBlocking", false);
+        PlayerHealth playerHealth = GetComponent<PlayerHealth>();
+        playerHealth.canTakeDamage = true;
     }
 
     public void doubleJump()
