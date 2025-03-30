@@ -2,17 +2,22 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Ground
+  - Enemy
+  - Water
+  - InstantDeath
+  - Crystal
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -41,3 +46,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: InstantDeath
+    uniqueID: 2525556913
+    locked: 0
+  - name: decorations
+    uniqueID: 3633559455
+    locked: 0
+  - name: tilemap
+    uniqueID: 2488784681
+    locked: 0
+  - name: characters
+    uniqueID: 1915468437
+    locked: 0
+  m_RenderingLayers:
+  - Default
