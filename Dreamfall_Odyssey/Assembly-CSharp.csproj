@@ -77,6 +77,7 @@
     <Compile Include="Assets\Scripts\karcze\NecromancerSpell.cs" />
     <Compile Include="Assets\Scripts\karcze\BasicEnemyEdited.cs" />
     <Compile Include="Assets\Scripts\karcze\Emerald.cs" />
+    <Compile Include="Assets\Scripts\karcze\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\karcze\JumpCrystal.cs" />
     <Compile Include="Assets\Scripts\karcze\UIManager.cs" />
     <Compile Include="Assets\Scripts\karcze\NecromancerHealth.cs" />
