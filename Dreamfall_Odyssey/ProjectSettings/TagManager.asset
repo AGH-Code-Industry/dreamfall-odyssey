@@ -46,5 +46,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: InstantDeath
+    uniqueID: 2525556913
+    locked: 0
+  - name: decorations
+    uniqueID: 3633559455
+    locked: 0
+  - name: tilemap
+    uniqueID: 2488784681
+    locked: 0
   m_RenderingLayers:
   - Default
