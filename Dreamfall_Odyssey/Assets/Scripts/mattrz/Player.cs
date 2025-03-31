@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace mattrz
 {
@@ -16,6 +17,10 @@ namespace mattrz
         [SerializeField] private Animator animator;
         [SerializeField] private ContactFilter2D GroundContactFilter;
 
+        [SerializeField] private Image[] hearts;
+        [SerializeField] private Sprite fullHeartSprite;
+        [SerializeField] private Sprite emptyHeartSprite;
+
         private static readonly int IsRunning = Animator.StringToHash("IsRunning");
         private static readonly int IsInAir = Animator.StringToHash("IsInAir");
 
@@ -25,6 +30,7 @@ namespace mattrz
 
         private bool IsGrounded => _rigidbody.IsTouching(GroundContactFilter);
         private bool isInvincible = false;
+
 
         private void Awake()
         {
@@ -93,6 +99,12 @@ namespace mattrz
             if (isInvincible) return;
             health -= damage;
             Debug.Log("Health: " + health);
+
+            for (int i = 0; i < hearts.Length; i++)
+            {
+                hearts[i].sprite = i < health ? fullHeartSprite : emptyHeartSprite;
+            }
+
             if (health <= 0)
             {
                 Destroy(gameObject);
